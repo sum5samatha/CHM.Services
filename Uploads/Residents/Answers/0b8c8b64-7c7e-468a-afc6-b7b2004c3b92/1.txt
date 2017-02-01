@@ -1,0 +1,23 @@
+IF Dols checked
+   ---> Does Other need support when off unit?
+         ---->No
+         ---->Yes--->
+                    1)State number of carers required
+                    2)Is the support specific to location?---->yes--> Stete Location: FREE TEXT
+
+
+
+
+section_quesitonID
+
+Dols->E6AD8141-31BB-4569-BE17-F32D8E6F6802
+Intern->277E12F4-1E6C-4CAE-B1B7-9903664F7B41
+Gurdian->3C86D51C-EB5D-4E3F-8693-11978803B675
+other->07288BFB-C4A1-4BD4-BBF4-5A18766925D3
+
+
+
+
+
+
+

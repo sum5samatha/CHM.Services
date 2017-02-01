@@ -1,0 +1,154 @@
+﻿<error errorId="5aa53acb-c813-49d8-b23c-9be79761c69e" application="/LM/W3SVC/1/ROOT/lm" host="WIN-5REOUQ5TKM6" type="System.Configuration.ConfigurationErrorsException" message="The entry 'CHMEntities' has already been added. (C:\inetpub\wwwroot\Sites\APP\CHMLadymead\web.config line 100)" source="System.Configuration" detail="System.Web.HttpUnhandledException (0x80004005): An error occurred when trying to create a controller of type 'RolesController'. Make sure that the controller has a parameterless public constructor. ---&gt; System.InvalidOperationException: An error occurred when trying to create a controller of type 'RolesController'. Make sure that the controller has a parameterless public constructor. ---&gt; System.TypeInitializationException: The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception. ---&gt; System.Configuration.ConfigurationErrorsException: The entry 'CHMEntities' has already been added. (C:\inetpub\wwwroot\Sites\APP\CHMLadymead\web.config line 100)&#xD;&#xA;   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)&#xD;&#xA;   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object&amp; result, Object&amp; resultRuntimeObject)&#xD;&#xA;   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object&amp; result, Object&amp; resultRuntimeObject)&#xD;&#xA;   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)&#xD;&#xA;   at System.Configuration.ConfigurationManager.get_ConnectionStrings()&#xD;&#xA;   at System.Data.Entity.Internal.AppConfig..ctor()&#xD;&#xA;   at System.Data.Entity.Internal.AppConfig..cctor()&#xD;&#xA;   --- End of inner exception stack trace ---&#xD;&#xA;   at System.Data.Entity.Internal.LazyInternalConnection..ctor(DbContext context, String nameOrConnectionString)&#xD;&#xA;   at System.Data.Entity.DbContext..ctor(String nameOrConnectionString)&#xD;&#xA;   at CHM.Services.Models.CHMEntities..ctor() in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Models\CHM.Context.cs:line 19&#xD;&#xA;   at CHM.Services.Controllers.RolesController..ctor() in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Controllers\RolesController.cs:line 24&#xD;&#xA;   at lambda_method(Closure )&#xD;&#xA;   at System.Web.Http.Dispatcher.DefaultHttpControllerActivator.Create(HttpRequestMessage request, HttpControllerDescriptor controllerDescriptor, Type controllerType)&#xD;&#xA;   --- End of inner exception stack trace ---&#xD;&#xA;   at System.Web.Http.Dispatcher.DefaultHttpControllerActivator.Create(HttpRequestMessage request, HttpControllerDescriptor controllerDescriptor, Type controllerType)&#xD;&#xA;   at System.Web.Http.Controllers.HttpControllerDescriptor.CreateController(HttpRequestMessage request)&#xD;&#xA;   at System.Web.Http.Dispatcher.HttpControllerDispatcher.&lt;SendAsync&gt;d__1.MoveNext()" time="2016-12-14T10:04:37.7576524Z" statusCode="500" webHostHtmlMessage="&lt;!DOCTYPE html&gt;&#xD;&#xA;&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Configuration Error&lt;/title&gt;&#xD;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:&quot;Consolas&quot;,&quot;Lucida Console&quot;,Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;         @media screen and (max-width: 639px) {&#xD;&#xA;          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }&#xD;&#xA;         }&#xD;&#xA;         @media screen and (max-width: 479px) {&#xD;&#xA;          pre { width: 280px; }&#xD;&#xA;         }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor=&quot;white&quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;Server Error in '/lm' Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;Configuration Error&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Description: &lt;/b&gt;An error occurred during the processing of a configuration file required to service this request. Please review the specific error details below and modify your configuration file appropriately.&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Parser Error Message: &lt;/b&gt;The entry 'CHMEntities' has already been added.&lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Source File: &lt;/b&gt; C:\inetpub\wwwroot\Sites\APP\CHMLadymead\web.config&lt;b&gt; &amp;nbsp;&amp;nbsp; Line: &lt;/b&gt; 100&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:application/json, text/plain, */*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_HOST:54.171.141.65&#xD;&#xA;HTTP_USER_AGENT:Mozilla/6.0 (iPhone; CPU iPhone OS 10_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25&#xD;&#xA;HTTP_X_DEVTOOLS_EMULATE_NETWORK_CONDITIONS_CLIENT_ID:4C0401D7-3D44-49AA-8EEF-F407EEAA47EA&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: application/json, text/plain, */*&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Host: 54.171.141.65&#xD;&#xA;User-Agent: Mozilla/6.0 (iPhone; CPU iPhone OS 10_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25&#xD;&#xA;X-DevTools-Emulate-Network-Conditions-Client-Id: 4C0401D7-3D44-49AA-8EEF-F407EEAA47EA&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/1/ROOT/lm" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\inetpub\wwwroot\Sites\APP\CHMLadymead\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="1" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/1" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="172.31.30.127" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/lm/api/Roles/GetActiveRoles" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\inetpub\wwwroot\Sites\APP\CHMLadymead\api\Roles\GetActiveRoles" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="124.123.71.182" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="124.123.71.182" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="6001" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/lm/api/Roles/GetActiveRoles" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="54.171.141.65" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="80" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/8.5" />
+    </item>
+    <item name="URL">
+      <value string="/lm/api/Roles/GetActiveRoles" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="application/json, text/plain, */*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="54.171.141.65" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/6.0 (iPhone; CPU iPhone OS 10_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/8.0 Mobile/10A5376e Safari/8536.25" />
+    </item>
+    <item name="HTTP_X_DEVTOOLS_EMULATE_NETWORK_CONDITIONS_CLIENT_ID">
+      <value string="4C0401D7-3D44-49AA-8EEF-F407EEAA47EA" />
+    </item>
+  </serverVariables>
+</error>

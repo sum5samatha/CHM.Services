@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8a90f050f24448bc9d695da96de7af10" Name="Diagram1" ZoomLevel="61"> 
+        <AssociationConnector Association="CHMModel.FK_Actions_Sections_Questions_Answers_Tasks" />
+        <AssociationConnector Association="CHMModel.FK_Actions_Sections_Questions_Answers_Tasks1" />
+        <EntityTypeShape EntityType="CHMModel.Action" Width="1.5" PointX="10.5" PointY="44.125" />
+        <EntityTypeShape EntityType="CHMModel.Actions_Days" Width="1.5" PointX="15.75" PointY="41.625" />
+        <EntityTypeShape EntityType="CHMModel.Intervention_Question" Width="1.5" PointX="7.5" PointY="35" />
+        <EntityTypeShape EntityType="CHMModel.Intervention_Question_Answer" Width="1.5" PointX="12.75" PointY="38" />
+        <EntityTypeShape EntityType="CHMModel.Intervention_Question_Answer_Task" Width="1.5" PointX="18" PointY="36.75" />
+        <EntityTypeShape EntityType="CHMModel.Intervention_Question_ParentQuestion" Width="1.5" PointX="21" PointY="39.75" />
+        <EntityTypeShape EntityType="CHMModel.Intervention" Width="1.5" PointX="21" PointY="44.875" />
+        <EntityTypeShape EntityType="CHMModel.Interventions_Question_Answer_Summary" Width="1.5" PointX="16" PointY="51.75" />
+        <EntityTypeShape EntityType="CHMModel.Interventions_Resident_Answers" Width="1.5" PointX="23.25" PointY="41.875" />
+        <EntityTypeShape EntityType="CHMModel.OrganizationGroup" Width="1.5" PointX="5.25" PointY="67.25" />
+        <EntityTypeShape EntityType="CHMModel.OrganizationGroups_Organizations" Width="1.5" PointX="10.5" PointY="56.125" />
+        <EntityTypeShape EntityType="CHMModel.Organization" Width="1.5" PointX="5.25" PointY="57.75" />
+        <EntityTypeShape EntityType="CHMModel.Question_ParentQuestion" Width="1.5" PointX="5.25" PointY="44.75" />
+        <EntityTypeShape EntityType="CHMModel.Resident_Interventions_Questions_Answers" Width="1.5" PointX="15" PointY="37.125" />
+        <EntityTypeShape EntityType="CHMModel.Resident" Width="1.5" PointX="7.5" PointY="45.625" />
+        <EntityTypeShape EntityType="CHMModel.Residents_Questions_Answers" Width="1.5" PointX="18.75" PointY="46.375" />
+        <EntityTypeShape EntityType="CHMModel.Residents_Relatives" Width="1.5" PointX="15.75" PointY="47.25" />
+        <EntityTypeShape EntityType="CHMModel.Role" Width="1.5" PointX="3" PointY="31.75" />
+        <EntityTypeShape EntityType="CHMModel.Section_Intervention" Width="1.5" PointX="5.25" PointY="35.625" />
+        <EntityTypeShape EntityType="CHMModel.Section_Intervention_Statements" Width="1.5" PointX="7.5" PointY="41.125" />
+        <EntityTypeShape EntityType="CHMModel.Section_Summary" Width="1.5" PointX="5.25" PointY="62.75" />
+        <EntityTypeShape EntityType="CHMModel.Section" Width="1.5" PointX="5.25" PointY="71.75" />
+        <EntityTypeShape EntityType="CHMModel.Sections_Organizations" Width="1.5" PointX="7.5" PointY="54.375" />
+        <EntityTypeShape EntityType="CHMModel.Sections_Questions" Width="1.5" PointX="13.5" PointY="47.375" />
+        <EntityTypeShape EntityType="CHMModel.Sections_Questions_Answers" Width="1.5" PointX="13.5" PointY="54.375" />
+        <EntityTypeShape EntityType="CHMModel.Sections_Questions_Answers_Summary" Width="1.5" PointX="10.5" PointY="50.75" />
+        <EntityTypeShape EntityType="CHMModel.Sections_Questions_Answers_Tasks" Width="1.5" PointX="10.5" PointY="38.75" />
+        <EntityTypeShape EntityType="CHMModel.Sections_Questions_Answers_Widget" Width="1.5" PointX="18.75" PointY="41.375" />
+        <EntityTypeShape EntityType="CHMModel.User" Width="1.5" PointX="3" PointY="34.625" />
+        <EntityTypeShape EntityType="CHMModel.Users_Organizations" Width="1.5" PointX="5.25" PointY="29.125" />
+        <EntityTypeShape EntityType="CHMModel.Users_Roles" Width="1.5" PointX="5.25" PointY="41.625" />
+        <EntityTypeShape EntityType="CHMModel.UserType" Width="1.5" PointX="0.75" PointY="41.875" />
+        <AssociationConnector Association="CHMModel.FK_Actions_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Actions_Days_Actions" />
+        <AssociationConnector Association="CHMModel.FK_Actions_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Actions_Residents" />
+        <AssociationConnector Association="CHMModel.FK_Actions_Section_Intervention" />
+        <AssociationConnector Association="CHMModel.FK_Actions_Days_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Actions_Days_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Actions_Days" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Answer_Intervention_Question" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Answer_Task_Intervention_Question" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_ParentQuestion_Intervention_Question" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_ParentQuestion_Intervention_Question1" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Section_Intervention" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Users" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Question_Answer_Summary_Intervention_Question" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Answer_Section_Intervention" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Answer_Task_Intervention_Question_Answer" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Answer_Users" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Answer_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_ParentQuestion_Intervention_Question_Answer" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Question_Answer_Summary_Intervention_Question_Answer" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Resident_Answers_Intervention_Question_Answer" />
+        <AssociationConnector Association="CHMModel.FK_Resident_Interventions_Questions_Answers_Intervention_Question_Answer" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Answer_Task_Section_Intervention" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Answer_Task_Users" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_Answer_Task_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_ParentQuestion_Users" />
+        <AssociationConnector Association="CHMModel.FK_Intervention_Question_ParentQuestion_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Resident_Answers_Interventions" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Question_Answer_Summary_Section_Intervention" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Question_Answer_Summary_Section_Summary" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Question_Answer_Summary_Users" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Resident_Answers_Residents" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Resident_Answers_Users" />
+        <AssociationConnector Association="CHMModel.FK_Interventions_Resident_Answers_Users1" />
+        <AssociationConnector Association="CHMModel.FK_OrganizationGroups_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_OrganizationGroups_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_OrganizationGroups_Organizations_OrganizationGroups" />
+        <AssociationConnector Association="CHMModel.FK_OrganizationGroups_Organizations_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_OrganizationGroups_Organizations_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_OrganizationGroups_Organizations_Organizations" />
+        <AssociationConnector Association="CHMModel.FK_Organizations_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Organizations_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Residents_Organizations" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Organizations_Organizations" />
+        <AssociationConnector Association="CHMModel.FK_Question_ParentQuestion_Sections_Questions" />
+        <AssociationConnector Association="CHMModel.FK_Question_ParentQuestion_Sections_Questions_Answers" />
+        <AssociationConnector Association="CHMModel.FK_Question_ParentQuestion_Sections_Questions1" />
+        <AssociationConnector Association="CHMModel.FK_Question_ParentQuestion_Users" />
+        <AssociationConnector Association="CHMModel.FK_Question_ParentQuestion_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Resident_Interventions_Questions_Answers_Residents" />
+        <AssociationConnector Association="CHMModel.FK_Resident_Interventions_Questions_Answers_Users" />
+        <AssociationConnector Association="CHMModel.FK_Resident_Interventions_Questions_Answers_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Residents_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Residents_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Residents_Questions_Answers_Residents" />
+        <AssociationConnector Association="CHMModel.FK_Residents_Relatives_Residents" />
+        <AssociationConnector Association="CHMModel.FK_Residents_Questions_Answers_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Residents_Questions_Answers_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Residents_Questions_Answers_Sections_Questions_Answers" />
+        <AssociationConnector Association="CHMModel.FK_Residents_Relatives_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Residents_Relatives_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Residents_Relatives_Users" />
+        <AssociationConnector Association="CHMModel.FK_Users_Roles_Roles" />
+        <AssociationConnector Association="CHMModel.FK_Section_Intervention_Section_Intervention" />
+        <AssociationConnector Association="CHMModel.FK_Section_Intervention_Statements_Section_Intervention" />
+        <AssociationConnector Association="CHMModel.FK_Section_Intervention_Users" />
+        <AssociationConnector Association="CHMModel.FK_Section_Intervention_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Tasks_Section_Intervention" />
+        <AssociationConnector Association="CHMModel.FK_Section_Intervention_Statements_Users" />
+        <AssociationConnector Association="CHMModel.FK_Section_Intervention_Statements_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Section_Summary_Users" />
+        <AssociationConnector Association="CHMModel.FK_Section_Summary_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Summary_Section_Summary" />
+        <AssociationConnector Association="CHMModel.FK_Sections_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Organizations_Sections" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Sections" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Sections" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Organizations_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Organizations_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Sections_Questions" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Summary_Sections_Questions" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Tasks_Sections_Questions" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Widget_Sections_Questions" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Summary_Sections_Questions_Answers" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Tasks_Sections_Questions_Answers" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Widget_Sections_Questions_Answers" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Summary_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Summary_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Tasks_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Tasks_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Widget_Users" />
+        <AssociationConnector Association="CHMModel.FK_Sections_Questions_Answers_Widget_Users1" />
+        <AssociationConnector Association="CHMModel.FK_Users_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Users_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Users_Organizations_CreatedBy" />
+        <AssociationConnector Association="CHMModel.FK_Users_Organizations_ModifiedBy" />
+        <AssociationConnector Association="CHMModel.FK_Users_Roles_Users" />
+        <AssociationConnector Association="CHMModel.FK_Users_UserType" />
+        <EntityTypeShape EntityType="CHMModel.PainMonitoring" Width="1.5" PointX="18.75" PointY="51.625" />
+        <AssociationConnector Association="CHMModel.FK_PainMonitoring_Organizations" />
+        <AssociationConnector Association="CHMModel.FK_PainMonitoring_Residents" />
+        <AssociationConnector Association="CHMModel.FK_PainMonitoring_Users" />
+        <AssociationConnector Association="CHMModel.FK_PainMonitoring_Users1" />
+        <EntityTypeShape EntityType="CHMModel.Configuration" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="CHMModel.FK_Configuration_Organizations" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

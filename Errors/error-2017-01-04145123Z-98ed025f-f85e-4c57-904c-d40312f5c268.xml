@@ -1,0 +1,171 @@
+﻿<error errorId="98ed025f-f85e-4c57-904c-d40312f5c268" application="/LM/W3SVC/4/ROOT" host="SF-D001" type="System.InvalidOperationException" message="A null value was returned where an instance of IHttpActionResult was expected." source="System.Web.Http" detail="System.Web.HttpUnhandledException (0x80004005): A null value was returned where an instance of IHttpActionResult was expected. ---&gt; System.InvalidOperationException: A null value was returned where an instance of IHttpActionResult was expected.&#xD;&#xA;   at System.Web.Http.Controllers.ApiControllerActionInvoker.&lt;InvokeActionAsyncCore&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ActionFilterResult.&lt;ExecuteAsync&gt;d__2.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ExceptionFilterResult.&lt;ExecuteAsync&gt;d__0.MoveNext()" user="samathareddy216@gmail.com" time="2017-01-04T14:51:23.2502136Z" statusCode="500" webHostHtmlMessage="&lt;!DOCTYPE html&gt;&#xD;&#xA;&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;A null value was returned where an instance of IHttpActionResult was expected.&lt;/title&gt;&#xD;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:&quot;Consolas&quot;,&quot;Lucida Console&quot;,Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;         @media screen and (max-width: 639px) {&#xD;&#xA;          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }&#xD;&#xA;         }&#xD;&#xA;         @media screen and (max-width: 479px) {&#xD;&#xA;          pre { width: 280px; }&#xD;&#xA;         }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor=&quot;white&quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;Server Error in '/' Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;A null value was returned where an instance of IHttpActionResult was expected.&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Description: &lt;/b&gt;A null value was returned where an instance of IHttpActionResult was expected.&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Exception Details: &lt;/b&gt;System.InvalidOperationException: A null value was returned where an instance of IHttpActionResult was expected.&lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&#xD;&#xA;&#xD;&#xA;An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Stack Trace:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;[InvalidOperationException: A null value was returned where an instance of IHttpActionResult was expected.]&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;InvokeActionAsyncCore&amp;gt;d__0.MoveNext() +1252&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;ExecuteAsync&amp;gt;d__2.MoveNext() +611&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;ExecuteAsync&amp;gt;d__0.MoveNext() +275&#xD;&#xA;&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_CONTENT_LENGTH:26721&#xD;&#xA;HTTP_CONTENT_TYPE:multipart/form-data; boundary=----WebKitFormBoundary5ex3ewyi1ZAfaRLG&#xD;&#xA;HTTP_ACCEPT:application/json, text/plain, */*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-GB,en-US;q=0.8,en;q=0.6&#xD;&#xA;HTTP_AUTHORIZATION:Bearer 8JVY-bzy2FTCXkH7wMIN0M7D_MDCmovYHsb8149uorfzsGgCvKTyVmocslp76Zmem8l7xv-iK7Rfmm-FsKHjaR3MnpRXb5F7FwGtqJOR5-IUOoFm-TLnpQWIxS8QejgN5r_-1hM-IK7nC6-uZ3992a5hHbdGWti-nIlhDLwJJo-3jtpPVXWTmPbIlBh0DVlWK-HtR4U1_zFFLS8aHhGKIqFSkyLoRS8GVYPbu-LrGCylEQsAFydqtzu-TvHGRVV1LVunTY_9dcK9uMAOLdRTkn6OYcPjXrB-31J0pCNqwqlsY01CH1o4SuR8uGYWP8KriW2pH2AZx1qSzVAK_a6Z9Eezr2trOIjWWf-GesUhJPy_pByjvNJudrirIha0Tp7G9JYxIR6BNDsRrFVsjGt-D0ICwaRx4N0pblcIuKxQI0CQN7ExLx-RkThLpOhukQ7HktBni3Vp0NFzc2yP6VOSuZGH_lGYOYq6tAtKptVz9w-nAyMX2Mgnvg65UxQAeVi64Zd9Nsgt4kG5xEolUvEueRKhklcTHXXHG5cPDjpIZWHKnqZEV6cYePyeE3wl1-jALd8mMwffgur6Y4_Ku2wNIn1Gwt7JZ4PC9sotLLmwyI7npjDsPH44UaZv2fBiYrVmeTXs0hMAun7WJWcanQDqAfz01OhVUEz6tFVjTLgPGLIfFn9o-bUQ3l4_go9zzlSj702H8rZqyaVxOFHoe3r5vG1x4AHH_QyIiZGRVdocWaI4a-p-hZ9PvKfgZ-6Fgm17foxaspG9q8Hrh9PQsLd0w4ptHIz4hE-jcoHsJrH7xORoUMO1rflFNES7zHmRqYGl7CeEFvqesES2exJZuhVWPOQNdKZvZg3UWGm0s9X1lJHHN20O_PaYNtaOeVYFTvGGB-RGtghpzEoIkg6PJR36BT15jZdAyVOkivGIwaqnw_UWYndsH4ri5-bNJ74GcbxEoXRHazOZZoLlrxsNbOAvwrL7l18l72WAdiwmYi2xg2qUqLfRZpqhrfHc4S4FYrhygJ_UZq52kq_6L5tAS0eCVbubyoDsukT1y2YTEQcrV4IqEiCDEZV4Xl8RrnY2-vGDKyh7FNOkZrQiWfOYT86gjeX1GEk8CN7PaZgUINuXPlWKCVR_5cZ8ZqL9BJiK4Zicuwsb1_iu35MV5T4F4daLWQ&#xD;&#xA;HTTP_HOST:sf-d001:1234&#xD;&#xA;HTTP_REFERER:http://localhost:53812/&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;HTTP_ORIGIN:http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Content-Length: 26721&#xD;&#xA;Content-Type: multipart/form-data; boundary=----WebKitFormBoundary5ex3ewyi1ZAfaRLG&#xD;&#xA;Accept: application/json, text/plain, */*&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: en-GB,en-US;q=0.8,en;q=0.6&#xD;&#xA;Authorization: Bearer 8JVY-bzy2FTCXkH7wMIN0M7D_MDCmovYHsb8149uorfzsGgCvKTyVmocslp76Zmem8l7xv-iK7Rfmm-FsKHjaR3MnpRXb5F7FwGtqJOR5-IUOoFm-TLnpQWIxS8QejgN5r_-1hM-IK7nC6-uZ3992a5hHbdGWti-nIlhDLwJJo-3jtpPVXWTmPbIlBh0DVlWK-HtR4U1_zFFLS8aHhGKIqFSkyLoRS8GVYPbu-LrGCylEQsAFydqtzu-TvHGRVV1LVunTY_9dcK9uMAOLdRTkn6OYcPjXrB-31J0pCNqwqlsY01CH1o4SuR8uGYWP8KriW2pH2AZx1qSzVAK_a6Z9Eezr2trOIjWWf-GesUhJPy_pByjvNJudrirIha0Tp7G9JYxIR6BNDsRrFVsjGt-D0ICwaRx4N0pblcIuKxQI0CQN7ExLx-RkThLpOhukQ7HktBni3Vp0NFzc2yP6VOSuZGH_lGYOYq6tAtKptVz9w-nAyMX2Mgnvg65UxQAeVi64Zd9Nsgt4kG5xEolUvEueRKhklcTHXXHG5cPDjpIZWHKnqZEV6cYePyeE3wl1-jALd8mMwffgur6Y4_Ku2wNIn1Gwt7JZ4PC9sotLLmwyI7npjDsPH44UaZv2fBiYrVmeTXs0hMAun7WJWcanQDqAfz01OhVUEz6tFVjTLgPGLIfFn9o-bUQ3l4_go9zzlSj702H8rZqyaVxOFHoe3r5vG1x4AHH_QyIiZGRVdocWaI4a-p-hZ9PvKfgZ-6Fgm17foxaspG9q8Hrh9PQsLd0w4ptHIz4hE-jcoHsJrH7xORoUMO1rflFNES7zHmRqYGl7CeEFvqesES2exJZuhVWPOQNdKZvZg3UWGm0s9X1lJHHN20O_PaYNtaOeVYFTvGGB-RGtghpzEoIkg6PJR36BT15jZdAyVOkivGIwaqnw_UWYndsH4ri5-bNJ74GcbxEoXRHazOZZoLlrxsNbOAvwrL7l18l72WAdiwmYi2xg2qUqLfRZpqhrfHc4S4FYrhygJ_UZq52kq_6L5tAS0eCVbubyoDsukT1y2YTEQcrV4IqEiCDEZV4Xl8RrnY2-vGDKyh7FNOkZrQiWfOYT86gjeX1GEk8CN7PaZgUINuXPlWKCVR_5cZ8ZqL9BJiK4Zicuwsb1_iu35MV5T4F4daLWQ&#xD;&#xA;Host: sf-d001:1234&#xD;&#xA;Referer: http://localhost:53812/&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;Origin: http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/4/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Bearer" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="26721" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="multipart/form-data; boundary=----WebKitFormBoundary5ex3ewyi1ZAfaRLG" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="4" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/4" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="192.168.1.8" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/api/Interventions/GenerateAdhocInterventions" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\api\Interventions\GenerateAdhocInterventions" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="residentId=ab6fe4fa-746b-4c22-8812-067367721d65" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="192.168.1.8" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="192.168.1.8" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="53172" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/api/Interventions/GenerateAdhocInterventions" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="sf-d001" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1234" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/api/Interventions/GenerateAdhocInterventions" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="26721" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="multipart/form-data; boundary=----WebKitFormBoundary5ex3ewyi1ZAfaRLG" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="application/json, text/plain, */*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-GB,en-US;q=0.8,en;q=0.6" />
+    </item>
+    <item name="HTTP_AUTHORIZATION">
+      <value string="Bearer 8JVY-bzy2FTCXkH7wMIN0M7D_MDCmovYHsb8149uorfzsGgCvKTyVmocslp76Zmem8l7xv-iK7Rfmm-FsKHjaR3MnpRXb5F7FwGtqJOR5-IUOoFm-TLnpQWIxS8QejgN5r_-1hM-IK7nC6-uZ3992a5hHbdGWti-nIlhDLwJJo-3jtpPVXWTmPbIlBh0DVlWK-HtR4U1_zFFLS8aHhGKIqFSkyLoRS8GVYPbu-LrGCylEQsAFydqtzu-TvHGRVV1LVunTY_9dcK9uMAOLdRTkn6OYcPjXrB-31J0pCNqwqlsY01CH1o4SuR8uGYWP8KriW2pH2AZx1qSzVAK_a6Z9Eezr2trOIjWWf-GesUhJPy_pByjvNJudrirIha0Tp7G9JYxIR6BNDsRrFVsjGt-D0ICwaRx4N0pblcIuKxQI0CQN7ExLx-RkThLpOhukQ7HktBni3Vp0NFzc2yP6VOSuZGH_lGYOYq6tAtKptVz9w-nAyMX2Mgnvg65UxQAeVi64Zd9Nsgt4kG5xEolUvEueRKhklcTHXXHG5cPDjpIZWHKnqZEV6cYePyeE3wl1-jALd8mMwffgur6Y4_Ku2wNIn1Gwt7JZ4PC9sotLLmwyI7npjDsPH44UaZv2fBiYrVmeTXs0hMAun7WJWcanQDqAfz01OhVUEz6tFVjTLgPGLIfFn9o-bUQ3l4_go9zzlSj702H8rZqyaVxOFHoe3r5vG1x4AHH_QyIiZGRVdocWaI4a-p-hZ9PvKfgZ-6Fgm17foxaspG9q8Hrh9PQsLd0w4ptHIz4hE-jcoHsJrH7xORoUMO1rflFNES7zHmRqYGl7CeEFvqesES2exJZuhVWPOQNdKZvZg3UWGm0s9X1lJHHN20O_PaYNtaOeVYFTvGGB-RGtghpzEoIkg6PJR36BT15jZdAyVOkivGIwaqnw_UWYndsH4ri5-bNJ74GcbxEoXRHazOZZoLlrxsNbOAvwrL7l18l72WAdiwmYi2xg2qUqLfRZpqhrfHc4S4FYrhygJ_UZq52kq_6L5tAS0eCVbubyoDsukT1y2YTEQcrV4IqEiCDEZV4Xl8RrnY2-vGDKyh7FNOkZrQiWfOYT86gjeX1GEk8CN7PaZgUINuXPlWKCVR_5cZ8ZqL9BJiK4Zicuwsb1_iu35MV5T4F4daLWQ" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="sf-d001:1234" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:53812/" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_ORIGIN">
+      <value string="http://localhost:53812" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="residentId">
+      <value string="ab6fe4fa-746b-4c22-8812-067367721d65" />
+    </item>
+  </queryString>
+</error>

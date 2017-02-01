@@ -1,0 +1,171 @@
+﻿<error errorId="37d05b19-b791-4739-b83e-c310e8c5fdcf" application="/LM/W3SVC/4/ROOT" host="SF-D001" type="System.Data.SqlClient.SqlException" message="Transaction (Process ID 57) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction." source=".Net SqlClient Data Provider" detail="System.Web.HttpUnhandledException (0x80004005): An error occurred while reading from the store provider's data reader. See the inner exception for details. ---&gt; System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while reading from the store provider's data reader. See the inner exception for details. ---&gt; System.Data.SqlClient.SqlException: Transaction (Process ID 57) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.&#xD;&#xA;   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)&#xD;&#xA;   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)&#xD;&#xA;   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean&amp; moreRows)&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean&amp; more)&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.&lt;&gt;c__DisplayClass189_0.&lt;ReadAsync&gt;b__0(Task t)&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.&lt;StoreReadAsync&gt;d__0.MoveNext()&#xD;&#xA;   --- End of inner exception stack trace ---&#xD;&#xA;   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.HandleReaderException(Exception e)&#xD;&#xA;   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.&lt;StoreReadAsync&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.RowNestedResultEnumerator.&lt;MoveNextAsync&gt;d__7.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.ObjectQueryNestedEnumerator.&lt;TryReadToNextElementAsync&gt;d__12.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.ObjectQueryNestedEnumerator.&lt;MoveNextAsync&gt;d__a.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Internal.LazyAsyncEnumerator`1.&lt;FirstMoveNextAsync&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.&lt;ForEachAsync&gt;d__5`1.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()&#xD;&#xA;   at CHM.Services.Controllers.InterventionsController.&lt;GetInterventionsForResident&gt;d__4.MoveNext() in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Controllers\InterventionsController.cs:line 483&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Threading.Tasks.TaskHelpersExtensions.&lt;CastToObject&gt;d__3`1.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ApiControllerActionInvoker.&lt;InvokeActionAsyncCore&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ActionFilterResult.&lt;ExecuteAsync&gt;d__2.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ExceptionFilterResult.&lt;ExecuteAsync&gt;d__0.MoveNext()" user="samathareddy216@gmail.com" time="2017-01-18T06:58:55.1478871Z" statusCode="500" webHostHtmlMessage="&lt;!DOCTYPE html&gt;&#xD;&#xA;&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Transaction (Process ID 57) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.&lt;/title&gt;&#xD;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:&quot;Consolas&quot;,&quot;Lucida Console&quot;,Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;         @media screen and (max-width: 639px) {&#xD;&#xA;          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }&#xD;&#xA;         }&#xD;&#xA;         @media screen and (max-width: 479px) {&#xD;&#xA;          pre { width: 280px; }&#xD;&#xA;         }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor=&quot;white&quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;Server Error in '/' Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;Transaction (Process ID 57) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Description: &lt;/b&gt;An error occurred while reading from the store provider's data reader. See the inner exception for details.&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Exception Details: &lt;/b&gt;System.Data.SqlClient.SqlException: Transaction (Process ID 57) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.&lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;Line 481:&#xD;&#xA;Line 482:&#xD;&#xA;&lt;font color=red&gt;Line 483:            List&amp;lt;Intervention&amp;gt; lstResdientTotalInterventions = await db.Interventions.Include(w =&amp;gt; w.Interventions_Resident_Answers).Include(obj =&amp;gt; obj.Actions_Days.Action).Where(obj =&amp;gt; obj.Actions_Days.Action.ResidentID.Equals(residentId)).ToListAsync&amp;lt;Intervention&amp;gt;();&#xD;&#xA;&lt;/font&gt;Line 484:&#xD;&#xA;Line 485:            lstResdientTotalInterventions.ToLookup(obj =&amp;gt; obj.Action_DayID).Select(g =&amp;gt; g.First());&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Source File: &lt;/b&gt; E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Controllers\InterventionsController.cs&lt;b&gt; &amp;nbsp;&amp;nbsp; Line: &lt;/b&gt; 483&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Stack Trace:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;[SqlException (0x80131904): Transaction (Process ID 57) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.]&#xD;&#xA;   System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction) +3277272&#xD;&#xA;   System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) +345&#xD;&#xA;   System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp;amp; dataReady) +5002&#xD;&#xA;   System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean&amp;amp; moreRows) +278&#xD;&#xA;   System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean&amp;amp; more) +284&#xD;&#xA;   System.Data.SqlClient.&amp;lt;&amp;gt;c__DisplayClass189_0.&amp;lt;ReadAsync&amp;gt;b__0(Task t) +90&#xD;&#xA;   System.Data.SqlClient.SqlDataReader.InvokeRetryable(Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose) +99&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Data.Entity.Core.Common.Internal.Materialization.&amp;lt;StoreReadAsync&amp;gt;d__0.MoveNext() +358&#xD;&#xA;&#xD;&#xA;[EntityCommandExecutionException: An error occurred while reading from the store provider&amp;#39;s data reader. See the inner exception for details.]&#xD;&#xA;   System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.HandleReaderException(Exception e) +185&#xD;&#xA;   System.Data.Entity.Core.Common.Internal.Materialization.&amp;lt;StoreReadAsync&amp;gt;d__0.MoveNext() +474&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Data.Entity.Core.Common.Internal.Materialization.&amp;lt;MoveNextAsync&amp;gt;d__7.MoveNext() +388&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Data.Entity.Core.Common.Internal.Materialization.&amp;lt;TryReadToNextElementAsync&amp;gt;d__12.MoveNext() +393&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Data.Entity.Core.Common.Internal.Materialization.&amp;lt;MoveNextAsync&amp;gt;d__a.MoveNext() +476&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Data.Entity.Internal.&amp;lt;FirstMoveNextAsync&amp;gt;d__0.MoveNext() +735&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Data.Entity.Infrastructure.&amp;lt;ForEachAsync&amp;gt;d__5`1.MoveNext() +476&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter`1.GetResult() +31&#xD;&#xA;   CHM.Services.Controllers.&amp;lt;GetInterventionsForResident&amp;gt;d__4.MoveNext() in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Controllers\InterventionsController.cs:483&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Threading.Tasks.&amp;lt;CastToObject&amp;gt;d__3`1.MoveNext() +252&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;InvokeActionAsyncCore&amp;gt;d__0.MoveNext() +331&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;ExecuteAsync&amp;gt;d__2.MoveNext() +611&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;ExecuteAsync&amp;gt;d__0.MoveNext() +275&#xD;&#xA;&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:application/json, text/plain, */*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-GB,en-US;q=0.8,en;q=0.6&#xD;&#xA;HTTP_AUTHORIZATION:Bearer xKS_ofX8iIiu9sxPyK63Na9HcBcYE96IApm4niu__u-j-6c9gT_-yqUfz4ueF78fFlki8t2bWAUDmQOji-tEGK64avYe-GT3Lh95Auiamu6E_TBnyix_5Iz8DhVHH0dqiwLzFnCDBQDoX92mj6xLxBy5nzR7QQZbjE4AOFyd4EB-v1KVVk5i2gDdvR1Fxw_zyXG_5iGABoUFnOUIM0pLfutdjmdeLG-noLFLvOBrLUk7PoPV58nX77EAVDNAnlR7ittdIlM8hoqoiaW-1enbSXLDudZ1rNuZfkEtdxg_nd97JNNuEZR0uukKfTE25Z3PmzP16l8nH4If2BESXCWbEWfn_tR3SeTJXVAUDglf44boXvGGdBsLzY0SPLS-o0vzs7_FObuthhGiKrO8QHEYx3qNecEhfFZGH8eS_Nprff1ex0mC0-4rXKHEo6P_vvmGUHB833SqJusSREN4-rp8tkUJN05w435yx6vaV03JbV9hMtDNhH9mUXClzs8_aUUmv1BRqkiHA5tOywlZzSmD1ZDuekiBhvobhD-WVGvLVnEZikJ_hYjrDuICX2gfIjxlH8KHM9zfjwecfDpzfRyGqbMpJ9MHjeYYpZyP6xc9j5Z0lQZRIzt_hQa1hk8Ni0QE0ZtNy7CfS-nDrVvCZKT4PJOqxqSW4cF7By_z9FcPXwxMqRpwwzizmMOOIwJaesCtAO3EGn4TThYxG3v7gKUjncBFMb1qxFBKXnVe9oSwoEFFlhUJ7sxMCIONBSRJ_3C9_wSOZH1kJIrX-rZSukWNlF5gVkIEo-Vt1koYDvz-3XJjlVTOKt_LiB1VezL_DjFCUk4s5HlcORbzZcrnM8Re4EDuu04HBvu_cTTkSMBcZ_ycB2ywz7FWwP6mU9-nS-1sYH09BGJmmKqxVsqYOiMamaI7i49H6hyNFuL7-aqhtAaV6hw_mwgae2fo23ncQYhvxHNmyeCPqIYLtkDspN9W_TXyKIgqHlEQjfGzGNg44gsWrqd0yTKNNl-QpEDDYITAZWNoZTkeL42WEoS93GZKrv5OnoLQObWfLYcn9LeIm9Hns9F_drHxNl8rzrw6luzsP-HMMteX6W86gshxUdSY_cVrkec0jG3UgYW6SeeUOdSiAOcnJzqo3OsQjHCjtWtyIqM9AuMbZ7_AmzfjnHriD8UECJz71qZ_gJ3CVvKpJ-Q&#xD;&#xA;HTTP_HOST:sf-d001:1234&#xD;&#xA;HTTP_REFERER:http://localhost:53812/&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;HTTP_ORIGIN:http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: application/json, text/plain, */*&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch&#xD;&#xA;Accept-Language: en-GB,en-US;q=0.8,en;q=0.6&#xD;&#xA;Authorization: Bearer xKS_ofX8iIiu9sxPyK63Na9HcBcYE96IApm4niu__u-j-6c9gT_-yqUfz4ueF78fFlki8t2bWAUDmQOji-tEGK64avYe-GT3Lh95Auiamu6E_TBnyix_5Iz8DhVHH0dqiwLzFnCDBQDoX92mj6xLxBy5nzR7QQZbjE4AOFyd4EB-v1KVVk5i2gDdvR1Fxw_zyXG_5iGABoUFnOUIM0pLfutdjmdeLG-noLFLvOBrLUk7PoPV58nX77EAVDNAnlR7ittdIlM8hoqoiaW-1enbSXLDudZ1rNuZfkEtdxg_nd97JNNuEZR0uukKfTE25Z3PmzP16l8nH4If2BESXCWbEWfn_tR3SeTJXVAUDglf44boXvGGdBsLzY0SPLS-o0vzs7_FObuthhGiKrO8QHEYx3qNecEhfFZGH8eS_Nprff1ex0mC0-4rXKHEo6P_vvmGUHB833SqJusSREN4-rp8tkUJN05w435yx6vaV03JbV9hMtDNhH9mUXClzs8_aUUmv1BRqkiHA5tOywlZzSmD1ZDuekiBhvobhD-WVGvLVnEZikJ_hYjrDuICX2gfIjxlH8KHM9zfjwecfDpzfRyGqbMpJ9MHjeYYpZyP6xc9j5Z0lQZRIzt_hQa1hk8Ni0QE0ZtNy7CfS-nDrVvCZKT4PJOqxqSW4cF7By_z9FcPXwxMqRpwwzizmMOOIwJaesCtAO3EGn4TThYxG3v7gKUjncBFMb1qxFBKXnVe9oSwoEFFlhUJ7sxMCIONBSRJ_3C9_wSOZH1kJIrX-rZSukWNlF5gVkIEo-Vt1koYDvz-3XJjlVTOKt_LiB1VezL_DjFCUk4s5HlcORbzZcrnM8Re4EDuu04HBvu_cTTkSMBcZ_ycB2ywz7FWwP6mU9-nS-1sYH09BGJmmKqxVsqYOiMamaI7i49H6hyNFuL7-aqhtAaV6hw_mwgae2fo23ncQYhvxHNmyeCPqIYLtkDspN9W_TXyKIgqHlEQjfGzGNg44gsWrqd0yTKNNl-QpEDDYITAZWNoZTkeL42WEoS93GZKrv5OnoLQObWfLYcn9LeIm9Hns9F_drHxNl8rzrw6luzsP-HMMteX6W86gshxUdSY_cVrkec0jG3UgYW6SeeUOdSiAOcnJzqo3OsQjHCjtWtyIqM9AuMbZ7_AmzfjnHriD8UECJz71qZ_gJ3CVvKpJ-Q&#xD;&#xA;Host: sf-d001:1234&#xD;&#xA;Referer: http://localhost:53812/&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;Origin: http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/4/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Bearer" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="4" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/4" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="192.168.1.14" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/api/Interventions/GetInterventionsForResident" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\api\Interventions\GetInterventionsForResident" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="residentId=447b9140-ab11-4860-8331-41b0f7ceaddd&amp;startDate=2017-01-18&amp;endDate=2017-01-18" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="192.168.1.14" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="192.168.1.14" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="64814" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/api/Interventions/GetInterventionsForResident" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="sf-d001" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1234" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/api/Interventions/GetInterventionsForResident" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="application/json, text/plain, */*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-GB,en-US;q=0.8,en;q=0.6" />
+    </item>
+    <item name="HTTP_AUTHORIZATION">
+      <value string="Bearer xKS_ofX8iIiu9sxPyK63Na9HcBcYE96IApm4niu__u-j-6c9gT_-yqUfz4ueF78fFlki8t2bWAUDmQOji-tEGK64avYe-GT3Lh95Auiamu6E_TBnyix_5Iz8DhVHH0dqiwLzFnCDBQDoX92mj6xLxBy5nzR7QQZbjE4AOFyd4EB-v1KVVk5i2gDdvR1Fxw_zyXG_5iGABoUFnOUIM0pLfutdjmdeLG-noLFLvOBrLUk7PoPV58nX77EAVDNAnlR7ittdIlM8hoqoiaW-1enbSXLDudZ1rNuZfkEtdxg_nd97JNNuEZR0uukKfTE25Z3PmzP16l8nH4If2BESXCWbEWfn_tR3SeTJXVAUDglf44boXvGGdBsLzY0SPLS-o0vzs7_FObuthhGiKrO8QHEYx3qNecEhfFZGH8eS_Nprff1ex0mC0-4rXKHEo6P_vvmGUHB833SqJusSREN4-rp8tkUJN05w435yx6vaV03JbV9hMtDNhH9mUXClzs8_aUUmv1BRqkiHA5tOywlZzSmD1ZDuekiBhvobhD-WVGvLVnEZikJ_hYjrDuICX2gfIjxlH8KHM9zfjwecfDpzfRyGqbMpJ9MHjeYYpZyP6xc9j5Z0lQZRIzt_hQa1hk8Ni0QE0ZtNy7CfS-nDrVvCZKT4PJOqxqSW4cF7By_z9FcPXwxMqRpwwzizmMOOIwJaesCtAO3EGn4TThYxG3v7gKUjncBFMb1qxFBKXnVe9oSwoEFFlhUJ7sxMCIONBSRJ_3C9_wSOZH1kJIrX-rZSukWNlF5gVkIEo-Vt1koYDvz-3XJjlVTOKt_LiB1VezL_DjFCUk4s5HlcORbzZcrnM8Re4EDuu04HBvu_cTTkSMBcZ_ycB2ywz7FWwP6mU9-nS-1sYH09BGJmmKqxVsqYOiMamaI7i49H6hyNFuL7-aqhtAaV6hw_mwgae2fo23ncQYhvxHNmyeCPqIYLtkDspN9W_TXyKIgqHlEQjfGzGNg44gsWrqd0yTKNNl-QpEDDYITAZWNoZTkeL42WEoS93GZKrv5OnoLQObWfLYcn9LeIm9Hns9F_drHxNl8rzrw6luzsP-HMMteX6W86gshxUdSY_cVrkec0jG3UgYW6SeeUOdSiAOcnJzqo3OsQjHCjtWtyIqM9AuMbZ7_AmzfjnHriD8UECJz71qZ_gJ3CVvKpJ-Q" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="sf-d001:1234" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:53812/" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_ORIGIN">
+      <value string="http://localhost:53812" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="residentId">
+      <value string="447b9140-ab11-4860-8331-41b0f7ceaddd" />
+    </item>
+    <item name="startDate">
+      <value string="2017-01-18" />
+    </item>
+    <item name="endDate">
+      <value string="2017-01-18" />
+    </item>
+  </queryString>
+</error>

@@ -1,0 +1,209 @@
+ [HttpGet]
+          [Route("GetMasterDataBasedonOrganization")]
+          public async Task<IHttpActionResult> GetSectionBasedonOrganization(Guid guidOrganizationID)
+          {
+
+              List<Sections_Organizations> lstSectionOrganization = db.Sections_Organizations.Where(i => i.IsActive == true && i.OrganizationID == guidOrganizationID).ToList<Sections_Organizations>();
+              List<Guid> GuidSectionIds=lstSectionOrganization.Select(i=>i.SectionID).ToList<Guid>();
+              
+              //sections 2
+              List<Section> lstSection = db.Sections.Where(i =>i.IsActive==true).ToList<Section>();
+              foreach (Section item in lstSection)
+              {
+                  item.Sections_Organizations = null;
+              }
+              List<Guid> GuidSectionID = lstSection.Select(i => i.ID).ToList<Guid>();
+
+              ////sectionQuestion 3
+              List<Sections_Questions> lstSectionQuestion = db.Sections_Questions.Where(i => GuidSectionID.Contains(i.SectionID) && i.IsActive == true).ToList<Sections_Questions>();
+              List<Guid> GuidSectionQuestionIds = lstSectionQuestion.Select(i => i.ID).ToList<Guid>();
+
+
+              foreach (Sections_Questions item in lstSectionQuestion)
+              {
+                  item.Question_ParentQuestion1 = null;
+                  item.Question_ParentQuestion = null;
+                  item.User = null;
+                  item.Section = null;
+                  item.Sections_Questions_Answers = null;
+                  item.Sections_Questions_Answers_Summary = null;
+                  item.Sections_Questions_Answers_Tasks = null;
+                  item.Sections_Questions_Answers_Widget = null;
+              }
+              ////SEctionQuestion Answer 4
+              List<Sections_Questions_Answers> lstSectionQuestionAnswer = db.Sections_Questions_Answers.Where(i => GuidSectionQuestionIds.Contains(i.Section_QuestionID) && i.IsActive == true).ToList<Sections_Questions_Answers>();
+              List<Guid> GuidSectionQuestionAnswerIDs = lstSectionQuestionAnswer.Select(i => i.ID).ToList<Guid>();
+
+
+              foreach (Sections_Questions_Answers item in lstSectionQuestionAnswer)
+              {
+                  item.Section = null;
+                  item.Sections_Questions = null;
+                  item.Sections_Questions_Answers_Summary = null;
+                  item.Sections_Questions_Answers_Tasks = null;
+                  item.Sections_Questions_Answers_Widget = null;
+              }
+              ////Sections_Questions_Answers_Tasks 5
+              List<Sections_Questions_Answers_Tasks> lstSections_Questions_Answers_Tasks = db.Sections_Questions_Answers_Tasks.Where(i => GuidSectionQuestionIds.Contains(i.Section_QuestionID) && i.IsActive == true).ToList<Sections_Questions_Answers_Tasks>();
+              List<Guid> GuidSectionInterventionsIDs = lstSections_Questions_Answers_Tasks.Select(i => i.Section_InterventionID).ToList<Guid>();
+
+              foreach (Sections_Questions_Answers_Tasks item in lstSections_Questions_Answers_Tasks)
+              {
+                  item.Section_Intervention = null;
+                  item.Sections_Questions_Answers = null;
+                  item.Sections_Questions = null;
+                  
+              }
+
+              //Sections_Questions_Answers_Summary 6
+              List<Sections_Questions_Answers_Summary> lstSections_Questions_Answers_Summary = db.Sections_Questions_Answers_Summary.Where(i => GuidSectionQuestionIds.Contains(i.Section_QuestionID) && i.IsActive == true).ToList<Sections_Questions_Answers_Summary>();
+              List<Guid> GuidSectionSeummaryId = lstSections_Questions_Answers_Summary.Select(i => i.SectionSummaryID).ToList<Guid>();
+
+              foreach (Sections_Questions_Answers_Summary item in lstSections_Questions_Answers_Summary)
+              {
+                  item.Sections_Questions = null;
+                  item.Sections_Questions_Answers = null;
+                  item.Section_Summary = null;
+                 
+              }
+
+
+              //Sections_Questions_Answers_Widget 7
+              List<Sections_Questions_Answers_Widget> lstSections_Questions_Answers_Widget = db.Sections_Questions_Answers_Widget.Where(i => GuidSectionQuestionIds.Contains(i.Section_QuestionID) && i.IsActive == true).ToList<Sections_Questions_Answers_Widget>();
+
+              foreach (Sections_Questions_Answers_Widget item in lstSections_Questions_Answers_Widget)
+              {
+                  item.Sections_Questions = null;
+                  item.Sections_Questions_Answers = null;
+                  
+              }
+
+              //Question_ParentQuestion 8
+              List<Question_ParentQuestion> lstQuestion_ParentQuestion = db.Question_ParentQuestion.Where(i => GuidSectionQuestionIds.Contains(i.QuestionID) && i.IsActive == true).ToList<Question_ParentQuestion>();
+
+              foreach (Question_ParentQuestion item in lstQuestion_ParentQuestion)
+              {
+                  item.Sections_Questions = null;
+                  item.Sections_Questions_Answers = null;
+              }
+
+              //Section_Intervention 9
+              List<Section_Intervention> lstSection_Intervention = db.Section_Intervention.Where(i => GuidSectionInterventionsIDs.Contains(i.ID) && i.IsActive == true).ToList<Section_Intervention>();
+              List<Guid> GuidSectionInterventionIDs = lstSection_Intervention.Select(i => i.ID).ToList<Guid>();
+              foreach (Section_Intervention item in lstSection_Intervention)
+              {
+
+                  item.Section_Intervention_Statements = null;
+                  item.Sections_Questions_Answers_Tasks = null;
+                  item.Section_Intervention1 = null;
+                  item.Section_Intervention2 = null;
+
+              }
+
+
+              //Section_Intervention_Statements 10
+              List<Section_Intervention_Statements> lstSection_Intervention_Statements = db.Section_Intervention_Statements.Where(i => GuidSectionInterventionIDs.Contains(i.Section_InterventionID) && i.IsActive == true).ToList<Section_Intervention_Statements>();
+
+              foreach (Section_Intervention_Statements item in lstSection_Intervention_Statements)
+              {
+                  item.Section_Intervention = null;
+                
+              }
+
+              //Section_Summary 11
+              List<Section_Summary> lstSection_Summary = db.Section_Summary.Where(i => GuidSectionSeummaryId.Contains(i.ID) && i.IsActive == true).ToList<Section_Summary>();
+
+              foreach (Section_Summary item in lstSection_Summary)
+              {
+                  item.Sections_Questions_Answers_Summary = null;
+                  item.Interventions_Question_Answer_Summary = null;
+              }
+
+              //Intervention_Question 12
+              List<Intervention_Question> lstIntervention_Question = db.Intervention_Question.Where(i => GuidSectionInterventionIDs.Contains(i.Section_InterventionID)).ToList<Intervention_Question>();
+              List<Guid> GuidInterventionQuestionIDs = lstIntervention_Question.Select(i => i.ID).ToList<Guid>();
+
+              foreach (Intervention_Question item in lstIntervention_Question)
+              {
+                  item.Section_Intervention = null;
+                  item.Intervention_Question_Answer = null;
+                  item.Intervention_Question_Answer_Task = null;
+                  item.Intervention_Question_ParentQuestion = null;
+                  item.Intervention_Question_ParentQuestion1 = null;
+                  item.Interventions_Question_Answer_Summary = null;
+                  
+              }
+              //Intervention_Question_Answer 13
+              List<Intervention_Question_Answer> lstIntervention_Question_Answer = db.Intervention_Question_Answer.Where(i => GuidInterventionQuestionIDs.Contains(i.Intervention_QuestionID) && i.IsActive == true).ToList<Intervention_Question_Answer>();
+
+              foreach (Intervention_Question_Answer item in lstIntervention_Question_Answer)
+              {
+                  item.Intervention_Question = null;
+                  item.Intervention_Question_Answer_Task = null;
+                  item.Intervention_Question_ParentQuestion = null;
+                  item.Interventions_Question_Answer_Summary = null;
+                  item.Interventions_Resident_Answers = null;
+                  item.Section_Intervention = null;
+                  item.Resident_Interventions_Questions_Answers = null;
+                
+              }
+
+              //Intervention_Question_Answer_Task 14
+              List<Intervention_Question_Answer_Task> lstIntervention_Question_Answer_Task = db.Intervention_Question_Answer_Task.Where(i => GuidInterventionQuestionIDs.Contains(i.InterventionQuestionID) && i.IsActive == true).ToList<Intervention_Question_Answer_Task>();
+              foreach (Intervention_Question_Answer_Task item in lstIntervention_Question_Answer_Task)
+              {
+                  item.Intervention_Question = null;
+                  item.Intervention_Question_Answer = null;
+                  item.Section_Intervention = null;
+                
+              }
+
+              //Interventions_Question_Answer_Summary 15
+              List<Interventions_Question_Answer_Summary> lstInterventions_Question_Answer_Summary = db.Interventions_Question_Answer_Summary.Where(i => GuidInterventionQuestionIDs.Contains(i.InterventionQuestionID) && i.IsActive == true).ToList<Interventions_Question_Answer_Summary>();
+
+              foreach (Interventions_Question_Answer_Summary item in lstInterventions_Question_Answer_Summary)
+              {
+                  item.Intervention_Question = null;
+                  item.Intervention_Question_Answer = null;
+                  item.Section_Intervention = null;
+                  item.Section_Summary = null;
+               
+              }
+
+              //Intervention_Question_ParentQuestion 16
+              List<Intervention_Question_ParentQuestion> lstIntervention_Question_ParentQuestion = db.Intervention_Question_ParentQuestion.Where(i => GuidInterventionQuestionIDs.Contains(i.InterventionQuestionID) && i.IsActive == true).ToList<Intervention_Question_ParentQuestion>();
+
+              foreach (Intervention_Question_ParentQuestion item in lstIntervention_Question_ParentQuestion)
+              {
+                  item.Intervention_Question = null;
+                  item.Intervention_Question_Answer = null;
+                
+              }
+
+              List<object> lstMasterData = new List<object>();
+              var arrmasterData = new
+              {
+                  objSections = lstSection,
+                  SectionsQuestions = lstSectionQuestion,
+                  SectionsQuestionsAnswers = lstSectionQuestionAnswer,
+                  SectionsQuestions_AnswersTasks = lstSections_Questions_Answers_Tasks,
+                  SectionsQuestionsAnswersSummary = lstSections_Questions_Answers_Summary,
+                  SectionsQuestionsAnswersWidget = lstSections_Questions_Answers_Widget,
+                  QuestionParentQuestion = lstQuestion_ParentQuestion,
+                  SectionIntervention = lstSection_Intervention,
+                  SectionInterventionStatements = lstSection_Intervention_Statements,
+                  SectionSummary = lstSection_Summary,
+                  InterventionQuestion = lstIntervention_Question,
+                  InterventionQuestionAnswer = lstIntervention_Question_Answer,
+                  InterventionQuestionAnswerTask = lstIntervention_Question_Answer_Task,
+                  InterventionsQuestionAnswerSummary = lstInterventions_Question_Answer_Summary,
+                  InterventionQuestionParentQuestion = lstIntervention_Question_ParentQuestion
+              };
+
+              lstMasterData.Add(arrmasterData);
+
+
+           
+            // var json = jsonSerialiser.Serialize(lstMasterData);
+             return Ok(lstMasterData);
+          }

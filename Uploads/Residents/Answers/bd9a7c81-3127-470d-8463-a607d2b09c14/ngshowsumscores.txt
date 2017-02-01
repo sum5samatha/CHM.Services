@@ -1,0 +1,1 @@
+(objSubQuestion.MinScore<=$parent.$parent.$parent.$parent.objSubQuestion.SumofScores&&objSubQuestion.MaxScore>=$parent.$parent.$parent.$parent.objSubQuestion.SumofScores)

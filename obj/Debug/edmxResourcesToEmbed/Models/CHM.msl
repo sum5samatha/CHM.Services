@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CHMModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Actions">
+      <EntityTypeMapping TypeName="CHMModel.Action">
+        <MappingFragment StoreEntitySet="Actions">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsAdhocIntervention" ColumnName="IsAdhocIntervention" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Instance" ColumnName="Instance" />
+          <ScalarProperty Name="Interval" ColumnName="Interval" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Occurrences" ColumnName="Occurrences" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Section_InterventionID" ColumnName="Section_InterventionID" />
+          <ScalarProperty Name="ResidentID" ColumnName="ResidentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Actions_Days">
+      <EntityTypeMapping TypeName="CHMModel.Actions_Days">
+        <MappingFragment StoreEntitySet="Actions_Days">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Specifications" ColumnName="Specifications" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="ActionID" ColumnName="ActionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Intervention_Question">
+      <EntityTypeMapping TypeName="CHMModel.Intervention_Question">
+        <MappingFragment StoreEntitySet="Intervention_Question">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsInAssessment" ColumnName="IsInAssessment" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="MaxScore" ColumnName="MaxScore" />
+          <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+          <ScalarProperty Name="AnswerType" ColumnName="AnswerType" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Section_InterventionID" ColumnName="Section_InterventionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Intervention_Question_Answer">
+      <EntityTypeMapping TypeName="CHMModel.Intervention_Question_Answer">
+        <MappingFragment StoreEntitySet="Intervention_Question_Answer">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AnswerType" ColumnName="AnswerType" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="LabelText" ColumnName="LabelText" />
+          <ScalarProperty Name="Intervention_QuestionID" ColumnName="Intervention_QuestionID" />
+          <ScalarProperty Name="Section_InterventionID" ColumnName="Section_InterventionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Intervention_Question_Answer_Task">
+      <EntityTypeMapping TypeName="CHMModel.Intervention_Question_Answer_Task">
+        <MappingFragment StoreEntitySet="Intervention_Question_Answer_Task">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Section_InterventionID" ColumnName="Section_InterventionID" />
+          <ScalarProperty Name="InterventionAnswerID" ColumnName="InterventionAnswerID" />
+          <ScalarProperty Name="InterventionQuestionID" ColumnName="InterventionQuestionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Intervention_Question_ParentQuestion">
+      <EntityTypeMapping TypeName="CHMModel.Intervention_Question_ParentQuestion">
+        <MappingFragment StoreEntitySet="Intervention_Question_ParentQuestion">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="InterventionParentAnswerID" ColumnName="InterventionParentAnswerID" />
+          <ScalarProperty Name="InterventionParentQuestionID" ColumnName="InterventionParentQuestionID" />
+          <ScalarProperty Name="InterventionQuestionID" ColumnName="InterventionQuestionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Interventions">
+      <EntityTypeMapping TypeName="CHMModel.Intervention">
+        <MappingFragment StoreEntitySet="Interventions">
+          <ScalarProperty Name="IsHandOverNotes" ColumnName="IsHandOverNotes" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Time_Span" ColumnName="Time_Span" />
+          <ScalarProperty Name="Exception" ColumnName="Exception" />
+          <ScalarProperty Name="OutCome" ColumnName="OutCome" />
+          <ScalarProperty Name="MoodBefore" ColumnName="MoodBefore" />
+          <ScalarProperty Name="MoodDuring" ColumnName="MoodDuring" />
+          <ScalarProperty Name="MoodAfter" ColumnName="MoodAfter" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ActualEndDate" ColumnName="ActualEndDate" />
+          <ScalarProperty Name="ActualStartDate" ColumnName="ActualStartDate" />
+          <ScalarProperty Name="PlannedEndDate" ColumnName="PlannedEndDate" />
+          <ScalarProperty Name="PlannedStartDate" ColumnName="PlannedStartDate" />
+          <ScalarProperty Name="Action_DayID" ColumnName="Action_DayID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Interventions_Question_Answer_Summary">
+      <EntityTypeMapping TypeName="CHMModel.Interventions_Question_Answer_Summary">
+        <MappingFragment StoreEntitySet="Interventions_Question_Answer_Summary">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SectionSummaryID" ColumnName="SectionSummaryID" />
+          <ScalarProperty Name="InterventionQuestionID" ColumnName="InterventionQuestionID" />
+          <ScalarProperty Name="Intervention_Question_AnswerID" ColumnName="Intervention_Question_AnswerID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Interventions_Resident_Answers">
+      <EntityTypeMapping TypeName="CHMModel.Interventions_Resident_Answers">
+        <MappingFragment StoreEntitySet="Interventions_Resident_Answers">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AnswerText" ColumnName="AnswerText" />
+          <ScalarProperty Name="Intervention_Question_AnswerID" ColumnName="Intervention_Question_AnswerID" />
+          <ScalarProperty Name="ResidentID" ColumnName="ResidentID" />
+          <ScalarProperty Name="InterventionID" ColumnName="InterventionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrganizationGroups">
+      <EntityTypeMapping TypeName="CHMModel.OrganizationGroup">
+        <MappingFragment StoreEntitySet="OrganizationGroups">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrganizationGroups_Organizations">
+      <EntityTypeMapping TypeName="CHMModel.OrganizationGroups_Organizations">
+        <MappingFragment StoreEntitySet="OrganizationGroups_Organizations">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="OrganizationGroupID" ColumnName="OrganizationGroupID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organizations">
+      <EntityTypeMapping TypeName="CHMModel.Organization">
+        <MappingFragment StoreEntitySet="Organizations">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question_ParentQuestion">
+      <EntityTypeMapping TypeName="CHMModel.Question_ParentQuestion">
+        <MappingFragment StoreEntitySet="Question_ParentQuestion">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ParentAnswerID" ColumnName="ParentAnswerID" />
+          <ScalarProperty Name="ParentQuestionID" ColumnName="ParentQuestionID" />
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resident_Interventions_Questions_Answers">
+      <EntityTypeMapping TypeName="CHMModel.Resident_Interventions_Questions_Answers">
+        <MappingFragment StoreEntitySet="Resident_Interventions_Questions_Answers">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AnswerText" ColumnName="AnswerText" />
+          <ScalarProperty Name="Intervention_Question_AnswerID" ColumnName="Intervention_Question_AnswerID" />
+          <ScalarProperty Name="ResidentID" ColumnName="ResidentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Residents">
+      <EntityTypeMapping TypeName="CHMModel.Resident">
+        <MappingFragment StoreEntitySet="Residents">
+          <ScalarProperty Name="ReasonForLeaving" ColumnName="ReasonForLeaving" />
+          <ScalarProperty Name="LeavingDate" ColumnName="LeavingDate" />
+          <ScalarProperty Name="MedicalHistory" ColumnName="MedicalHistory" />
+          <ScalarProperty Name="NHS" ColumnName="NHS" />
+          <ScalarProperty Name="AdmittedFrom" ColumnName="AdmittedFrom" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsAccepted" ColumnName="IsAccepted" />
+          <ScalarProperty Name="ReasonForAdmission" ColumnName="ReasonForAdmission" />
+          <ScalarProperty Name="SocialWorker" ColumnName="SocialWorker" />
+          <ScalarProperty Name="NokPreferred" ColumnName="NokPreferred" />
+          <ScalarProperty Name="NokAddress" ColumnName="NokAddress" />
+          <ScalarProperty Name="NokTelephoneNumber" ColumnName="NokTelephoneNumber" />
+          <ScalarProperty Name="Nok" ColumnName="Nok" />
+          <ScalarProperty Name="GPDetails" ColumnName="GPDetails" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Residents_Questions_Answers">
+      <EntityTypeMapping TypeName="CHMModel.Residents_Questions_Answers">
+        <MappingFragment StoreEntitySet="Residents_Questions_Answers">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AnswerText" ColumnName="AnswerText" />
+          <ScalarProperty Name="Section_Question_AnswerID" ColumnName="Section_Question_AnswerID" />
+          <ScalarProperty Name="ResidentID" ColumnName="ResidentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Residents_Relatives">
+      <EntityTypeMapping TypeName="CHMModel.Residents_Relatives">
+        <MappingFragment StoreEntitySet="Residents_Relatives">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ResidentID" ColumnName="ResidentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="CHMModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Section_Intervention">
+      <EntityTypeMapping TypeName="CHMModel.Section_Intervention">
+        <MappingFragment StoreEntitySet="Section_Intervention">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Parent_InterventionID" ColumnName="Parent_InterventionID" />
+          <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+          <ScalarProperty Name="MaxScore" ColumnName="MaxScore" />
+          <ScalarProperty Name="InterventionIcon" ColumnName="InterventionIcon" />
+          <ScalarProperty Name="InterventionTitle" ColumnName="InterventionTitle" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Section_Intervention_Statements">
+      <EntityTypeMapping TypeName="CHMModel.Section_Intervention_Statements">
+        <MappingFragment StoreEntitySet="Section_Intervention_Statements">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Section_InterventionID" ColumnName="Section_InterventionID" />
+          <ScalarProperty Name="Statements" ColumnName="Statements" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Section_Summary">
+      <EntityTypeMapping TypeName="CHMModel.Section_Summary">
+        <MappingFragment StoreEntitySet="Section_Summary">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+          <ScalarProperty Name="MaxScore" ColumnName="MaxScore" />
+          <ScalarProperty Name="IsAnswerText" ColumnName="IsAnswerText" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections">
+      <EntityTypeMapping TypeName="CHMModel.Section">
+        <MappingFragment StoreEntitySet="Sections">
+          <ScalarProperty Name="HasSummary" ColumnName="HasSummary" />
+          <ScalarProperty Name="HasScore" ColumnName="HasScore" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections_Organizations">
+      <EntityTypeMapping TypeName="CHMModel.Sections_Organizations">
+        <MappingFragment StoreEntitySet="Sections_Organizations">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections_Questions">
+      <EntityTypeMapping TypeName="CHMModel.Sections_Questions">
+        <MappingFragment StoreEntitySet="Sections_Questions">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="MaxScore" ColumnName="MaxScore" />
+          <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+          <ScalarProperty Name="AnswerType" ColumnName="AnswerType" />
+          <ScalarProperty Name="QuestionView" ColumnName="QuestionView" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections_Questions_Answers">
+      <EntityTypeMapping TypeName="CHMModel.Sections_Questions_Answers">
+        <MappingFragment StoreEntitySet="Sections_Questions_Answers">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AnswerType" ColumnName="AnswerType" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="LabelText" ColumnName="LabelText" />
+          <ScalarProperty Name="Section_QuestionID" ColumnName="Section_QuestionID" />
+          <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections_Questions_Answers_Summary">
+      <EntityTypeMapping TypeName="CHMModel.Sections_Questions_Answers_Summary">
+        <MappingFragment StoreEntitySet="Sections_Questions_Answers_Summary">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SectionSummaryID" ColumnName="SectionSummaryID" />
+          <ScalarProperty Name="Section_QuestionID" ColumnName="Section_QuestionID" />
+          <ScalarProperty Name="Section_Question_AnswerID" ColumnName="Section_Question_AnswerID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections_Questions_Answers_Tasks">
+      <EntityTypeMapping TypeName="CHMModel.Sections_Questions_Answers_Tasks">
+        <MappingFragment StoreEntitySet="Sections_Questions_Answers_Tasks">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Section_InterventionID" ColumnName="Section_InterventionID" />
+          <ScalarProperty Name="Section_Question_AnswerID" ColumnName="Section_Question_AnswerID" />
+          <ScalarProperty Name="Section_QuestionID" ColumnName="Section_QuestionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections_Questions_Answers_Widget">
+      <EntityTypeMapping TypeName="CHMModel.Sections_Questions_Answers_Widget">
+        <MappingFragment StoreEntitySet="Sections_Questions_Answers_Widget">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Widget" ColumnName="Widget" />
+          <ScalarProperty Name="Section_Question_AnswerID" ColumnName="Section_Question_AnswerID" />
+          <ScalarProperty Name="Section_QuestionID" ColumnName="Section_QuestionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="CHMModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="TelePhone" ColumnName="TelePhone" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users_Organizations">
+      <EntityTypeMapping TypeName="CHMModel.Users_Organizations">
+        <MappingFragment StoreEntitySet="Users_Organizations">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users_Roles">
+      <EntityTypeMapping TypeName="CHMModel.Users_Roles">
+        <MappingFragment StoreEntitySet="Users_Roles">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTypes">
+      <EntityTypeMapping TypeName="CHMModel.UserType">
+        <MappingFragment StoreEntitySet="UserType">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PainMonitorings">
+      <EntityTypeMapping TypeName="CHMModel.PainMonitoring">
+        <MappingFragment StoreEntitySet="PainMonitoring">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PartsID" ColumnName="PartsID" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="ResidentID" ColumnName="ResidentID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configurations">
+      <EntityTypeMapping TypeName="CHMModel.Configuration">
+        <MappingFragment StoreEntitySet="Configuration">
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="ConfigurationValue" ColumnName="ConfigurationValue" />
+          <ScalarProperty Name="ConfigurationKey" ColumnName="ConfigurationKey" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

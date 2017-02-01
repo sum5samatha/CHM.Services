@@ -1,0 +1,256 @@
+<h4>
+    <i class="fa fa-user"></i> Edit Resident
+</h4>
+
+<uib-accordion close-others="vm.OpenOnlyOneSection" class="">
+    <uib-accordion-group is-open="vm.PersonalInformation.open">
+        <uib-accordion-heading>
+            <div class="">
+                Personal Information
+                <i class="pull-right fa" ng-class="{'fa-chevron-circle-down': vm.PersonalInformation.open, 'fa-chevron-circle-right': !vm.PersonalInformation.open}"></i>
+            </div>
+        </uib-accordion-heading>
+        <form class="form-horizontal">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" ng-model="vm.Resident.FirstName" placeholder="First Name" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" ng-model="vm.Resident.LastName" placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Preferered to be called as</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" ng-model="vm.Resident.NickName" placeholder="Preferered to be called as" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Gender</label>
+                    <div class="col-sm-9">
+                        <select class="form-control" ng-model="vm.Resident.Gender">
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Photo</label>
+                    <div class="col-sm-9">
+                        <div>
+                            <input type="file" accept="image/*" logofile="LogoFile" image="vm.ResidentImage" class="form-control" />
+                        </div>
+                        <div>
+                            <img ng-show="vm.ResidentImage" ng-src="{{vm.ResidentImage.url}}" type="{{vm.ResidentImage.file.type}}" alt="Photo" class="img-responsive" />
+                            <img ng-hide="vm.ResidentImage" ng-src="{{RootUrl + vm.PhotoUrl}}" alt="Pho alt=" photo" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Date of Birth</label>
+                    <div class="col-sm-9">
+                        <p class="input-group">
+                            <input type="text" name="DOB" class="form-control input-sm" is-date readonly ng-required="true" uib-datepicker-popup="{{DateFormat}}" ng-model="vm.Resident.DOB" is-open="vm.DOBOpened" datepicker-options="dateOptions" close-text="Close" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-sm" ng-click="vm.openDOB($event)"><i class="fa fa-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Telephone Number</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" ng-model="vm.Resident.Telephone" placeholder="Telephone Number">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Mobile Number</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" ng-model="vm.Resident.Mobile" placeholder="Mobile Number">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtGPAddress" class="col-sm-3 control-label">GP Address</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="txtGPAddress" ng-model="vm.Resident.GPDetails" placeholder="GP Address"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-primary pull-right" ng-click="vm.UpdatePersonalInformation()">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </form>
+    </uib-accordion-group>
+    <uib-accordion-group is-open="status.open" ng-repeat="objSection in vm.Sections| orderBy : 'DisplayOrder'">
+        <uib-accordion-heading>
+            <div class="">
+                {{objSection.Name}}
+                <i class="pull-right fa" ng-class="{'fa-chevron-circle-down': status.open, 'fa-chevron-circle-right': !status.open}"></i>
+            </div>
+        </uib-accordion-heading>
+        <form class="form-horizontal">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-repeat="objSection_Question in objSection.Sections_Questions | orderBy: 'DisplayOrder'">
+                <div class="main col-lg-12">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li class="alignradio"> {{objSection_Question.Question}}</li>
+                        </ul>
+                    </div>                    
+                    <div class="col-lg-6">
+                        <div ng-if="objSection_Question.AnswerType == 'RadioButtonList'">
+                            <div class="InlineDiv" ng-repeat="objSection_Question_Answer in objSection_Question.Sections_Questions_Answers | orderBy: 'DisplayOrder'">
+                                <label class="radio-inline">
+                                    <input type="radio" ng-model="objSection_Question.ChosenAnswer" ng-change="vm.RadioButtonChange(objSection_Question)" name="{{'Section_Question_Answer' + objSection_Question.ID}}" value="{{objSection_Question_Answer.ID}}">{{objSection_Question_Answer.LabelText}}
+                                </label>
+                            </div>
+
+
+                        </div>
+                        <div ng-if="objSection_Question.AnswerType == 'DropDownList'">
+                            <select ng-options="objSection_Question_Answer.ID as objSection_Question_Answer.LabelText for objSection_Question_Answer in objSection_Question.Sections_Questions_Answers | orderBy:'DisplayOrder'"  ng-model="objSection_Question.ChosenAnswer" id="ddllanguage">
+                                <option value=''>Select</option>
+                            </select>
+                        </div>
+                        <div ng-if="objSection_Question.AnswerType == 'Yes/No'">
+                            <toggle-switch ng-model="objSection_Question.ChosenAnswer" ng-change="vm.ToggleSwitchChange(objSection_Question)" off-label="No" on-label="Yes"></toggle-switch>
+                        </div>
+
+                        <div ng-if="objSection_Question.AnswerType == 'FileUpload'">
+
+                            <input type="file" file-model="objSection_Question.ChosenAnswer" name="fileAttachment" />                          
+                            <a target ="_blank" href="{{RootUrl + objSection_Question.ChosenFilePath}}">{{objSection_Question.ChosenFileName}}</a>
+                        </div>
+                        <div ng-if="objSection_Question.AnswerType == 'FreeText'">
+                            <textarea ng-model="objSection_Question.ChosenAnswer" class="form-control input-sm"></textarea>
+                        </div>
+                        <div ng-if="objSection_Question.AnswerType == 'CheckBoxList'">
+                            <div class="InlineDiv" ng-repeat="objSection_Question_Answer in objSection_Question.Sections_Questions_Answers | orderBy: 'DisplayOrder'">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" ng-model="objSection_Question_Answer.ChosenAnswer" ng-checked="objSection_Question_Answer.ChosenAnswer" name="{{'Section_Question_Answer' + objSection_Question.ID}}" ng-change="vm.CheckBoxChange(objSection_Question,objSection_Question_Answer)" value="{{objSection_Question_Answer.ID}}">{{objSection_Question_Answer.LabelText}}
+                                    <textarea class="form-control input-sm" ng-model="objSection_Question.txtAreaAnswer" ng-if="objSection_Question_Answer.AnswerType=='FreeText' && objSection_Question_Answer.ChosenAnswer"></textarea>
+                                </label>
+                                
+                            </div>
+
+
+                        </div>
+                        <div ng-if="objSection_Question.AnswerType == 'Number'">
+                            <input type="text" ng-model="objSection_Question.ChosenAnswer" class="form-control input-sm" />
+                         
+                        </div>
+                        
+                    </div>
+                    
+                    <div ng-if="objSection_Question.MaxScore==null && objSection_Question.MinScore==null" ng-repeat="objSection_Question_Answer in objSection_Question.Sections_Questions_Answers | orderBy: 'DisplayOrder'">
+                        <div ng-if="objSection_Question_Answer.childQuestion">
+
+                            <div ng-repeat="objSubQuestion in objSection_Question_Answer.childQuestion" ng-include="'SubQuestion'">
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="objSection_Question.MaxScore!=null && objSection_Question.MinScore!=null">
+
+                        <div ng-repeat="objSubQuestion in objSection_Question.childQuestion| orderBy: 'DisplayOrder'" ng-include="'SubQuestion'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/ng-template" id="SubQuestion">              
+              
+
+                <div class="main col-lg-12" ng-show="objSubQuestion.MinScore!=null?vm.ShowChildQuestionQuestion(objSubQuestion,$parent.$parent.$parent.$parent.$parent.$parent):(objSubQuestion.ParentAnswerID==$parent.$parent.$parent.$parent.objSection_Question.ChosenAnswerID|| $parent.$parent.$parent.$parent.objSection_Question.MulChosenAnswerID.indexOf(objSubQuestion.ParentAnswerID)> -1 )||(objSubQuestion.ParentAnswerID==$parent.$parent.$parent.$parent.objSubQuestion.ChosenAnswerID || $parent.$parent.$parent.$parent.objSubQuestion.MulChosenAnswerID.indexOf(objSubQuestion.ParentAnswerID)> -1)||(objSubQuestion.ParentAnswerID==$parent.$parent.objSection_Question.ChosenAnswerID|| $parent.$parent.objSection_Question.MulChosenAnswerID.indexOf(objSubQuestion.ParentAnswerID)> -1 )||(objSubQuestion.ParentAnswerID==$parent.$parent.objSubQuestion.ChosenAnswerID || $parent.$parent.objSubQuestion.MulChosenAnswerID.indexOf(objSubQuestion.ParentAnswerID)> -1)">
+                   
+
+                        <div class=" col-lg-6">
+
+                            <ul>
+
+                                <li class="alignradio"> {{objSubQuestion.Question}}</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <div ng-if="objSubQuestion.AnswerType == 'RadioButtonList'">
+                                <div class="InlineDiv">
+                                    <label class="radio-inline" ng-repeat="objSubQuestionAnswer in objSubQuestion.Sections_Questions_Answers | orderBy: 'DisplayOrder'">
+                                        <input type="radio" ng-model="objSubQuestion.ChosenAnswer" ng-change="vm.RadioButtonChange(objSubQuestion)" name="{{'objSubQuestionAnswer' + objSubQuestion.ID}}" value="{{objSubQuestionAnswer.ID}}">{{objSubQuestionAnswer.LabelText}}
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div ng-if="objSubQuestion.AnswerType == 'DropDownList'">
+                               
+                                <select ng-options="objSubQuestionAnswer.ID as objSubQuestionAnswer.LabelText for objSubQuestionAnswer in objSubQuestion.Sections_Questions_Answers | orderBy: 'DisplayOrder'" ng-model="objSubQuestion.ChosenAnswer" id="ddllanguage">
+                                    <option value=''>Select</option>
+                                </select>
+                            </div>
+                            <div ng-if="objSubQuestion.AnswerType == 'Yes/No'">
+                                <toggle-switch ng-model="objSubQuestion.ChosenAnswer" ng-change="vm.ToggleSwitchChange(objSubQuestion)" off-label="No" on-label="Yes"></toggle-switch>
+                            </div>
+                            <div ng-if="objSubQuestion.AnswerType == 'FileUpload'">
+                                <input type="file" file-model="objSubQuestion.ChosenAnswer" name="fileAttachment" />
+                                <a target="_blank" href="{{RootUrl + objSubQuestion.ChosenFilePath}}">{{objSubQuestion.ChosenFileName}}</a>
+                            </div>
+                            <div ng-if="objSubQuestion.AnswerType == 'FreeText'">
+                                <textarea ng-model="objSubQuestion.ChosenAnswer" class="form-control input-sm"></textarea>
+                            </div>
+                            <div ng-if="objSubQuestion.AnswerType == 'CheckBoxList'">
+                                <div class="InlineDiv" ng-repeat="objSubQuestionAnswer in objSubQuestion.Sections_Questions_Answers | orderBy: 'DisplayOrder'">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" ng-model="objSubQuestionAnswer.ChosenAnswer" ng-checked="objSubQuestionAnswer.ChosenAnswer" name="{{'objSubQuestionAnswer' + objSubQuestion.ID}}" ng-change="vm.CheckBoxChange(objSubQuestion,objSubQuestionAnswer)" value="{{objSubQuestionAnswer.ID}}">{{objSubQuestionAnswer.LabelText}}
+                                        <textarea class="form-control input-sm" ng-model="objSubQuestion.txtAreaAnswer" ng-if="objSubQuestionAnswer.AnswerType=='FreeText'&& objSubQuestionAnswer.ChosenAnswer"></textarea>
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div ng-if="objSubQuestion.AnswerType == 'Number'">
+                                <input type="text" ng-model="objSubQuestion.ChosenAnswer" class="form-control input-sm" />
+
+                            </div>
+                        </div>
+                        <div ng-if="objSection_Question.MaxScore==null && objSection_Question.MinScore==null" ng-repeat="objSubQuestionAnswer in objSubQuestion.Sections_Questions_Answers | orderBy: 'DisplayOrder'">
+                            <div ng-if="objSubQuestionAnswer.childQuestion">
+                                <div ng-repeat="objSubQuestion in objSubQuestionAnswer.childQuestion" ng-include="'SubQuestion'">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div ng-if="objSection_Question.MaxScore!=null && objSection_Question.MinScore!=null">
+
+                            <div ng-repeat="objSubQuestion in objSubQuestion.childQuestion| orderBy: 'DisplayOrder' " ng-include="'SubQuestion'">
+                            </div>
+                        </div>
+                    </div>
+            </script>
+
+
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-primary pull-right" ng-click="vm.UpdateAssessmentData(objSection)">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </form>
+    </uib-accordion-group>
+</uib-accordion>
+
+
+<div class="row bottom10">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <a ng-disabled="!vm.ResidentId" ui-sref="RiskAssessmentSummary({ResidentId:'{{vm.ResidentId}}',EditMode:true})" class="btn btn-primary pull-right">
+            View Summary
+        </a>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+alert message not visible in join today
+
+no alert message after sending data
+
+is data deing saved by default?
+
+where is total due today is calculated?
+
+Checkbox of i accept is missing
+
+
+Profile picture is not being updated.    	Profile -> change picture
+View profile, like, remove connection send message is not working. 	Profile -> my connections
+Spell check broadcast.	              Community admin -> Broadcast message
+Alert message missing for send broad cast message.	Community admin -> Broadcast message -> Send

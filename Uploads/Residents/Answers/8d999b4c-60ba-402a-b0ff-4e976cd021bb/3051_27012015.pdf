@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title></head>
+<body>
+    <form method="post" action="SMSError.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+    <div>
+        <span id="lblErrorMessage">An unknown error has occured in the application. Please contact the support team for further assistance.<br/>System.IO.FileNotFoundException: Could not find file 'D:\Projects\SMS\Code\SMS\SchoolManagementSystem\UI\Mail_Attachments\3051_27012015.pdf'.
+File name: 'D:\Projects\SMS\Code\SMS\SchoolManagementSystem\UI\Mail_Attachments\3051_27012015.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Web.HttpResponse.TransmitFile(String filename, Int64 offset, Int64 length)
+   at System.Web.HttpResponse.TransmitFile(String filename)
+   at SMS.UI.Inbox.rptParentAttachments_ItemCommand(Object source, RepeaterCommandEventArgs e) in D:\Projects\SMS\Code\SMS\SchoolManagementSystem\UI\Inbox.aspx.cs:line 1525
+   at System.Web.UI.WebControls.Repeater.OnItemCommand(RepeaterCommandEventArgs e)
+   at System.Web.UI.WebControls.Repeater.OnBubbleEvent(Object sender, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.RepeaterItem.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.LinkButton.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.LinkButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</span>
+    </div>
+    
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D388AD30" />
+</div></form>
+</body>
+</html>

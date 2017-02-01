@@ -1,0 +1,6 @@
+1)Edit Care Plan---->checkBox Update
+2)Summary-->While cognition memory in summary getting ResidentName-->Question-->Answers
+3)ResidentInterventions--->page load-->loader
+
+ $rootScope.$broadcast("loader_show");
+ $rootScope.$broadcast("loader_hide");

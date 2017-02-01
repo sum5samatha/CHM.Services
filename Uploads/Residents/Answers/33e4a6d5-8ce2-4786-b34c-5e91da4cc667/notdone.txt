@@ -1,0 +1,11 @@
+1.TimeTableInstitution.aspx
+
+2.MyTimeTable.aspx
+
+3.ManageWeekDays.aspx
+
+4.ManageTimeTable.aspx
+
+5.ManageStudentAttendance.aspx
+
+6.ManageStudent.aspx

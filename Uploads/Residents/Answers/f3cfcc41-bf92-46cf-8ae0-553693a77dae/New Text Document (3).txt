@@ -1,0 +1,6 @@
+No View option for leads.
+How to clear selected value in 'Search Company' dropdown.
+Accounts -> get projects -> get contacts -> add contact --- submit button in 'add contact' is not working.
+Accounts -> get projects -> edit---- update button is not visibe(visible only sometimes)
+Accounts -> get projects -> edit----  update button is not working
+

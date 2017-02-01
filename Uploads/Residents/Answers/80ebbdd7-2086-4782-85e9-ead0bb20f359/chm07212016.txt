@@ -1,0 +1,18 @@
+ if (vm.ResidentIDs)
+
+ if (response.data.length > 0)
+                    {
+                        for (var i = 0; i < response.data.length; i++) {
+                            if (response.data[i].Status == null)
+                                response.data[i].Status = "Pending";
+                            else if(response.data[i].Status=="NotCompleted")
+                                response.data[i].Status = "Not Completed";
+                            else if (response.data[i].Status == "PartiallyCompleted")
+                                response.data[i].Status = "Partially Completed";
+                            else
+                            {
+
+                            }
+                        }
+                       
+                    }

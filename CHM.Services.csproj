@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{869164AC-AF08-450A-8603-2B77EBF749D9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CHM.Services</RootNamespace>
+    <AssemblyName>CHM.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah.Contrib.WebApi">
+      <HintPath>..\packages\Elmah.Contrib.WebApi.1.0.10.25\lib\net45\Elmah.Contrib.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\CHM.Context.tt">
+      <DependentUpon>CHM.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CHM.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CHM.edmx.diagram">
+      <DependentUpon>CHM.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\CHM.tt">
+      <DependentUpon>CHM.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CHM.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Authentication\ApplicationRoleManager.cs" />
+    <Compile Include="Authentication\AuthContext.cs" />
+    <Compile Include="Authentication\AuthRepository.cs" />
+    <Compile Include="Authentication\CustomPasswordHasher.cs" />
+    <Compile Include="Authentication\CustomSignInManager.cs" />
+    <Compile Include="Authentication\CustomUserManager.cs" />
+    <Compile Include="Authentication\Extensions\Extensions.cs" />
+    <Compile Include="Authentication\Models\Role.cs" />
+    <Compile Include="Authentication\Models\User.cs" />
+    <Compile Include="Authentication\Providers\SimpleAuthorizationServerProvider.cs" />
+    <Compile Include="Authentication\RoleStoreService.cs" />
+    <Compile Include="Authentication\Startup.cs" />
+    <Compile Include="Authentication\UserStoreService.cs" />
+    <Compile Include="Controllers\ActionsController.cs" />
+    <Compile Include="Controllers\InterventionQuestionParentQuestionController.cs" />
+    <Compile Include="Controllers\InterventionsController.cs" />
+    <Compile Include="Controllers\QuestionParentQuestionController.cs" />
+    <Compile Include="Controllers\ResidentsController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\SectionsController.cs" />
+    <Compile Include="Controllers\SectionsQuestionsController.cs" />
+    <Compile Include="Controllers\SyncronizationController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="ExceptionHandling\ErrorController.cs" />
+    <Compile Include="ExceptionHandling\UnhandledExceptionFilter.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Action.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Actions_Days.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHM.Context.cs">
+      <DependentUpon>CHM.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\CHM.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\CHM.Designer.cs">
+      <DependentUpon>CHM.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\Configuration.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Intervention.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Interventions_Question_Answer_Summary.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Interventions_Resident_Answers.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Intervention_Question.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Intervention_Question_Answer.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Intervention_Question_Answer_Task.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Intervention_Question_ParentQuestion.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Organization.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrganizationGroup.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrganizationGroups_Organizations.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PainMonitoring.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Question_ParentQuestion.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Resident.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Residents_Questions_Answers.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Residents_Relatives.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Resident_Interventions_Questions_Answers.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Section.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sections_Organizations.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sections_Questions.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sections_Questions_Answers.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sections_Questions_Answers_Summary.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sections_Questions_Answers_Tasks.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sections_Questions_Answers_Widget.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Section_Intervention.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Section_Intervention_Statements.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Section_Summary.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Users_Organizations.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Users_Roles.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserType.cs">
+      <DependentUpon>CHM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CHMService.pubxml" />
+    <None Include="Properties\PublishProfiles\enthusis - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\enthusis - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Errors\" />
+    <Folder Include="Uploads\Residents\Answers\temp\" />
+    <Folder Include="Uploads\Residents\OriginalPhotos\temp\" />
+    <Folder Include="Uploads\Residents\Photos\temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\CHM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CHM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50829</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50829/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

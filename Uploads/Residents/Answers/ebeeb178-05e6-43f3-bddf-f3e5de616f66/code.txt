@@ -1,0 +1,25 @@
+var vm = this;
+        vm.UsersList = [];  // Declare List Of Users
+        vm.Roles = [];      // Declare List Of User Roles
+        vm.UsersData = [];  // Declare  Users And Roles in One  list
+       
+        UsersService.GetActiveUsers().then(
+        function (response) {
+            vm.UsersList = response.data;
+           
+            for (var i = 0; i < vm.UsersList.length; i++) {
+                var Users = new Array(vm.UsersList[i].UserName, vm.UsersList[i].Designation);     
+                for (var j = 0; j < vm.UsersList[i].Users_Roles.length; j++) {
+                    vm.Roles.push(vm.UsersList[i].Users_Roles[j].Role.Name);                      //append  User Roles value to the Roles
+                    Users.push(vm.UsersList[i].Users_Roles[j].Role.Name);                         //append  value to the Users
+                    vm.UsersData.push(Users);                                                     //append Both Roles And Users to The UsersData 
+                }
+            }
+            
+        },
+
+       
+          function (err) {
+              toastr.error('An error occurred while retrieving Users List.');
+          }
+          );

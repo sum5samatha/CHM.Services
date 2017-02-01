@@ -1,0 +1,44 @@
+Managae Student 
+
+1.Previous EducationalDetails Mandatory Fields
+
+2.Student UserRole
+
+3.Password Data not Required
+
+4.Email is not mandatory
+
+5.Student Not inserting in to Student_Baranch_Batch_Semester  (Fixed)
+
+
+6.Employee Grade ( Inserting Employee TimeTable should match According)
+
+
+7.Student Guardian(Getting in frontEnd , need to write code in code behind)
+
+8.Subject Edit Mode Subject Name not changing
+
+9.Clearing List Values and DropDown Values in All AssociatePages
+
+10.Display TimeTable ClassTimings by ClassTime(StartTime and EndTime)
+
+11.ManageTimeTable page clear the Pop fields in Save button click of popup
+
+12.AssociateStudentsToSemester.aspx page should be added in MasterPage Script
+
+13.Headings in Copy Batches(Source and Destination)
+
+14.Validation Subject should be selected if only Semester is selected in Copy Batches
+
+15.No Need of Next button (BY default check the Semester and semester checkbox Read only)
+
+16.Radiobuttons Should be on left hand side (Name it as Source) , CheckBox should be on RightHand Side(Name it as Destination)
+
+17.Validations in CopyBatches
+
+
+18.Associate WeekDays To Semester Edit Mode
+
+19.manageStudent / Employee Client side code (ddl Change event)
+
+

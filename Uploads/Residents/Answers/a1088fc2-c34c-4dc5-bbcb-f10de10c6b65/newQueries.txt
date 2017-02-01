@@ -1,0 +1,52 @@
+section:
+--------
+
+Communication Needs Assessment& Support Plan
+-------------------------------------------
+
+Question:16,17 are missing 
+
+
+Continence Needs Assessment& Support Plan
+------------------------------------------
+
+Question 9):Unable to manage intimate personal female hygiene during menstruation (if applicable):
+
+ans:If YES add TASK FEMALE HYGIENE and go to question 6
+
+If NO go to next question
+
+Doubt:after coming to 9 th question it is given to go back to 6 question
+
+Question 8):Unable to manage personal care needs after toileting (e.g. intimate hygiene, hand hygiene, disposal of pads, sanitary items):
+
+answer:Unable to manage personal care needs after toileting (e.g. intimate hygiene, hand hygiene, disposal of pads, sanitary items):
+
+If No go to next question
+
+
+
+
+Emotional & Psychological Needs Assessment& Support Plan
+=========================================================
+question2)
+
+ans:If YES go to question 3
+If NO and answer to question 2 was NO close assessment
+If question 1 was YES and question 2 was no go to question 3
+
+
+question8) Psychosis Tick all that are relevant
+ans:If none ticked go to question 8  
+
+question 10)smilar doubt as question 8
+
+
+question 15). Suicide risk assessment [Add scores for outcome]
+
+Gender:  Male (10 Female (0) [Self Populate]
+
+
+
+
+

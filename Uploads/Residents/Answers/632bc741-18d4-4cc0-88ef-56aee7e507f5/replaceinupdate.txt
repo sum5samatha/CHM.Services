@@ -1,0 +1,5 @@
+UPDATE [Timesheet_CRM].[dbo].[EmpDetails] 
+SET Email = REPLACE(Email, 'microexcel', 'abcns')
+WHERE IdEmp<600
+
+replace part of string in column using update

@@ -1,0 +1,171 @@
+﻿<error errorId="d009a0b2-bba3-476c-bbe5-b4f8c81b41fb" application="/LM/W3SVC/4/ROOT" host="SF-D001" type="System.OperationCanceledException" message="The operation was canceled." source="mscorlib" detail="System.OperationCanceledException: The operation was canceled.&#xD;&#xA;   at System.Threading.CancellationToken.ThrowOperationCanceledException()&#xD;&#xA;   at System.Web.Http.Owin.HttpMessageHandlerAdapter.&lt;BufferResponseContentAsync&gt;d__13.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Owin.HttpMessageHandlerAdapter.&lt;InvokeCore&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContextStage.&lt;RunApp&gt;d__5.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.Owin.Security.Infrastructure.AuthenticationMiddleware`1.&lt;Invoke&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.Owin.Security.Infrastructure.AuthenticationMiddleware`1.&lt;Invoke&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContextStage.&lt;RunApp&gt;d__5.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContext.&lt;DoFinalWork&gt;d__2.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.StageAsyncResult.End(IAsyncResult ar)&#xD;&#xA;   at System.Web.HttpApplication.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="samathareddy216@gmail.com" time="2017-01-07T10:03:42.5820303Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:no-cache&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_PRAGMA:no-cache&#xD;&#xA;HTTP_ACCEPT:application/json, text/plain, */*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_AUTHORIZATION:Bearer qygI2a4h2NB6z25Vs-cShBYspjJ5-19FGOjWo64FSIxvF_WLBfO8BsB1hFLL18dWUPhOi9S0MLaiKfj1KvdCaZGjvcI7eXBCT8rOfQSKzKM6C-M_i7buhTiGefRgX6s0PpU8SJbSsJUt-wCPbYVFXckvcYFuzCgJPobkLmZY5pqO-0n_7jQs_lM0l_tp_dPU4dBDb3mHk1dg3e9BKwV8W2UJla2yu43psQqH7lwsaAPqv_15DxwQ4r3wp1ARkhbQl4PpSMnJ6i6kWn-AM0Cmx4dWTam48NohxNHTFdEjN7z1fdytXWkKJy0zIvra3o5CTZvTfM72L9zlTb8Brv7ePYsaPw8ruMSdfme--kAvWNKilKlfAB80jDSWRGsUIpYrVXpJwgwt0mwne7NMBgUIJ2tyCGUVVLF2bY0NPkhkSxXBOEF83WZYqA8hAv28Z6Ls2UoxHyTQc3a9lfcVj0yzRJGQYcLU28uVU_onuyGQ7FuiP7lEValsiuHS2NV8GjhjoDtpsL5GZIwIqmgRrz9_lUr_2dfnJ1RwMtpB_krjYDo3gXgnISd4YtjJiX-Bl2PS9bdMwmgvT4gTV8FRgD5k5oeBgSOKOamwNvhFfNy1TfV7i6-dsPRWDB9NraaEVGcOk5a5o_JNlBShGxLB9ja8tq93DNUVn_YVJn0z-v86xuqehAJs_2kcBFQZ8N3iXa6gyfbtb7bGloUn7_A5H5ZccWrpUuDKN2FtYBQtHB-ZRtx8-TCg_brqZce0rH_y1G4DWZvDBAkb5Sbj89x1d38eLfrvDFdo30YViqGgY7ttzX2qRv7381eDM2hNlhruTZ-B0rbKPSe6bVG-68GrDBYSQ7vtyfV-ygU74ivPh_RugXGh7z1kP_4gPWQiU561M9OtfiDqiVKbTDq9vxAb7K68RPGt_ki1BnlVxwyNXeJSbwQh2XQUtMuMxamdtHFqlyf5UBssKq-tNoUMVIOh3nk1bo5IbJRiOqc45pddEqLvlqRtypBJgW26q9lQNWXSAQ4xhiVIr9oWnpvtzn56V-MSX9YesCER6wERr1aM2KiwnV8aGGI1htrB1jP3H0Ppkw1YilpvteasBd0tKKrCk7w5oJ89WV8OkENvBdVwLnCh0b93lRv7EVjIn6HsPmXEzP_TbOCz5dqGMx4GUbjPyWd7sA&#xD;&#xA;HTTP_HOST:sf-d001:1234&#xD;&#xA;HTTP_REFERER:http://localhost:53812/&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;HTTP_ORIGIN:http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: no-cache&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Pragma: no-cache&#xD;&#xA;Accept: application/json, text/plain, */*&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Authorization: Bearer qygI2a4h2NB6z25Vs-cShBYspjJ5-19FGOjWo64FSIxvF_WLBfO8BsB1hFLL18dWUPhOi9S0MLaiKfj1KvdCaZGjvcI7eXBCT8rOfQSKzKM6C-M_i7buhTiGefRgX6s0PpU8SJbSsJUt-wCPbYVFXckvcYFuzCgJPobkLmZY5pqO-0n_7jQs_lM0l_tp_dPU4dBDb3mHk1dg3e9BKwV8W2UJla2yu43psQqH7lwsaAPqv_15DxwQ4r3wp1ARkhbQl4PpSMnJ6i6kWn-AM0Cmx4dWTam48NohxNHTFdEjN7z1fdytXWkKJy0zIvra3o5CTZvTfM72L9zlTb8Brv7ePYsaPw8ruMSdfme--kAvWNKilKlfAB80jDSWRGsUIpYrVXpJwgwt0mwne7NMBgUIJ2tyCGUVVLF2bY0NPkhkSxXBOEF83WZYqA8hAv28Z6Ls2UoxHyTQc3a9lfcVj0yzRJGQYcLU28uVU_onuyGQ7FuiP7lEValsiuHS2NV8GjhjoDtpsL5GZIwIqmgRrz9_lUr_2dfnJ1RwMtpB_krjYDo3gXgnISd4YtjJiX-Bl2PS9bdMwmgvT4gTV8FRgD5k5oeBgSOKOamwNvhFfNy1TfV7i6-dsPRWDB9NraaEVGcOk5a5o_JNlBShGxLB9ja8tq93DNUVn_YVJn0z-v86xuqehAJs_2kcBFQZ8N3iXa6gyfbtb7bGloUn7_A5H5ZccWrpUuDKN2FtYBQtHB-ZRtx8-TCg_brqZce0rH_y1G4DWZvDBAkb5Sbj89x1d38eLfrvDFdo30YViqGgY7ttzX2qRv7381eDM2hNlhruTZ-B0rbKPSe6bVG-68GrDBYSQ7vtyfV-ygU74ivPh_RugXGh7z1kP_4gPWQiU561M9OtfiDqiVKbTDq9vxAb7K68RPGt_ki1BnlVxwyNXeJSbwQh2XQUtMuMxamdtHFqlyf5UBssKq-tNoUMVIOh3nk1bo5IbJRiOqc45pddEqLvlqRtypBJgW26q9lQNWXSAQ4xhiVIr9oWnpvtzn56V-MSX9YesCER6wERr1aM2KiwnV8aGGI1htrB1jP3H0Ppkw1YilpvteasBd0tKKrCk7w5oJ89WV8OkENvBdVwLnCh0b93lRv7EVjIn6HsPmXEzP_TbOCz5dqGMx4GUbjPyWd7sA&#xD;&#xA;Host: sf-d001:1234&#xD;&#xA;Referer: http://localhost:53812/&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;Origin: http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/4/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Bearer" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="4" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/4" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="192.168.1.15" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/api/Users/GetUserOrganizations" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\api\Users\GetUserOrganizations" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="UserID=4e6f9d08-111f-43f6-8ee8-0a626d5a5b53" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="192.168.1.17" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="192.168.1.17" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="55488" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/api/Users/GetUserOrganizations" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="sf-d001" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1234" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/api/Users/GetUserOrganizations" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="no-cache" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_PRAGMA">
+      <value string="no-cache" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="application/json, text/plain, */*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_AUTHORIZATION">
+      <value string="Bearer qygI2a4h2NB6z25Vs-cShBYspjJ5-19FGOjWo64FSIxvF_WLBfO8BsB1hFLL18dWUPhOi9S0MLaiKfj1KvdCaZGjvcI7eXBCT8rOfQSKzKM6C-M_i7buhTiGefRgX6s0PpU8SJbSsJUt-wCPbYVFXckvcYFuzCgJPobkLmZY5pqO-0n_7jQs_lM0l_tp_dPU4dBDb3mHk1dg3e9BKwV8W2UJla2yu43psQqH7lwsaAPqv_15DxwQ4r3wp1ARkhbQl4PpSMnJ6i6kWn-AM0Cmx4dWTam48NohxNHTFdEjN7z1fdytXWkKJy0zIvra3o5CTZvTfM72L9zlTb8Brv7ePYsaPw8ruMSdfme--kAvWNKilKlfAB80jDSWRGsUIpYrVXpJwgwt0mwne7NMBgUIJ2tyCGUVVLF2bY0NPkhkSxXBOEF83WZYqA8hAv28Z6Ls2UoxHyTQc3a9lfcVj0yzRJGQYcLU28uVU_onuyGQ7FuiP7lEValsiuHS2NV8GjhjoDtpsL5GZIwIqmgRrz9_lUr_2dfnJ1RwMtpB_krjYDo3gXgnISd4YtjJiX-Bl2PS9bdMwmgvT4gTV8FRgD5k5oeBgSOKOamwNvhFfNy1TfV7i6-dsPRWDB9NraaEVGcOk5a5o_JNlBShGxLB9ja8tq93DNUVn_YVJn0z-v86xuqehAJs_2kcBFQZ8N3iXa6gyfbtb7bGloUn7_A5H5ZccWrpUuDKN2FtYBQtHB-ZRtx8-TCg_brqZce0rH_y1G4DWZvDBAkb5Sbj89x1d38eLfrvDFdo30YViqGgY7ttzX2qRv7381eDM2hNlhruTZ-B0rbKPSe6bVG-68GrDBYSQ7vtyfV-ygU74ivPh_RugXGh7z1kP_4gPWQiU561M9OtfiDqiVKbTDq9vxAb7K68RPGt_ki1BnlVxwyNXeJSbwQh2XQUtMuMxamdtHFqlyf5UBssKq-tNoUMVIOh3nk1bo5IbJRiOqc45pddEqLvlqRtypBJgW26q9lQNWXSAQ4xhiVIr9oWnpvtzn56V-MSX9YesCER6wERr1aM2KiwnV8aGGI1htrB1jP3H0Ppkw1YilpvteasBd0tKKrCk7w5oJ89WV8OkENvBdVwLnCh0b93lRv7EVjIn6HsPmXEzP_TbOCz5dqGMx4GUbjPyWd7sA" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="sf-d001:1234" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:53812/" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_ORIGIN">
+      <value string="http://localhost:53812" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="UserID">
+      <value string="4e6f9d08-111f-43f6-8ee8-0a626d5a5b53" />
+    </item>
+  </queryString>
+</error>

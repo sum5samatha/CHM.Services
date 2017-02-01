@@ -1,0 +1,31 @@
+
+
+Following are the details regarding CRM.
+
+Url for CRM in Local Machine:  localHost:9000
+Nagendra system password:  corner9042
+
+
+Roles 
+------
+
+salesManager:
+-------------
+userID:amithk@abcns.com
+Password:micro123
+
+
+Sales Executive:
+----------------
+userID:melissa.dilorenzo@abcns.com
+Password:micro123
+
+
+CXX/CEO
+-------
+userID:bbouchard@abcns.com
+password:micro123
+
+
+
+

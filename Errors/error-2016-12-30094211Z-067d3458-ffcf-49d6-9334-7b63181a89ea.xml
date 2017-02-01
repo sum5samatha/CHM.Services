@@ -1,0 +1,166 @@
+﻿<error errorId="067d3458-ffcf-49d6-9334-7b63181a89ea" application="/LM/W3SVC/4/ROOT" host="SF-D001" type="System.ArgumentOutOfRangeException" message="Year, Month, and Day parameters describe an un-representable DateTime." source="mscorlib" detail="System.Web.HttpUnhandledException (0x80004005): Year, Month, and Day parameters describe an un-representable DateTime. ---&gt; System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.&#xD;&#xA;   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)&#xD;&#xA;   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)&#xD;&#xA;   at CHM.Services.Utils.DateTimeExtensions.isValidDate(Int32 date, Int32 month, Int32 year) in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Utils\Utils.cs:line 52&#xD;&#xA;   at CHM.Services.Utils.DateTimeExtensions.GetDateForWeekDay(DayOfWeek DesiredDay, Int32 Occurrence, Int32 Month, Int32 Year) in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Utils\Utils.cs:line 41&#xD;&#xA;   at CHM.Services.Controllers.InterventionsController.&lt;GenerateInterventions&gt;d__1.MoveNext() in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Controllers\InterventionsController.cs:line 246&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Threading.Tasks.TaskHelpersExtensions.&lt;CastToObject&gt;d__3`1.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ApiControllerActionInvoker.&lt;InvokeActionAsyncCore&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ActionFilterResult.&lt;ExecuteAsync&gt;d__2.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ExceptionFilterResult.&lt;ExecuteAsync&gt;d__0.MoveNext()" user="samathareddy216@gmail.com" time="2016-12-30T09:42:11.6345003Z" statusCode="500" webHostHtmlMessage="&lt;!DOCTYPE html&gt;&#xD;&#xA;&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Year, Month, and Day parameters describe an un-representable DateTime.&lt;/title&gt;&#xD;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:&quot;Consolas&quot;,&quot;Lucida Console&quot;,Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;         @media screen and (max-width: 639px) {&#xD;&#xA;          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }&#xD;&#xA;         }&#xD;&#xA;         @media screen and (max-width: 479px) {&#xD;&#xA;          pre { width: 280px; }&#xD;&#xA;         }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor=&quot;white&quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;Server Error in '/' Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;Year, Month, and Day parameters describe an un-representable DateTime.&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Description: &lt;/b&gt;Year, Month, and Day parameters describe an un-representable DateTime.&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Exception Details: &lt;/b&gt;System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.&lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;Line 50:         {&#xD;&#xA;Line 51:             DateTime dt = new DateTime(year, month, date);&#xD;&#xA;&lt;font color=red&gt;Line 52:             return dt.Month == month &amp;amp;&amp;amp; dt.Day == date;&#xD;&#xA;&lt;/font&gt;Line 53:         }&#xD;&#xA;Line 54:     }&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Source File: &lt;/b&gt; E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Utils\Utils.cs&lt;b&gt; &amp;nbsp;&amp;nbsp; Line: &lt;/b&gt; 52&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Stack Trace:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;[ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.]&#xD;&#xA;   System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day) +14295946&#xD;&#xA;   System.DateTime..ctor(Int32 year, Int32 month, Int32 day) +21&#xD;&#xA;   CHM.Services.Utils.DateTimeExtensions.isValidDate(Int32 date, Int32 month, Int32 year) in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Utils\Utils.cs:52&#xD;&#xA;   CHM.Services.Utils.DateTimeExtensions.GetDateForWeekDay(DayOfWeek DesiredDay, Int32 Occurrence, Int32 Month, Int32 Year) in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Utils\Utils.cs:41&#xD;&#xA;   CHM.Services.Controllers.&amp;lt;GenerateInterventions&amp;gt;d__1.MoveNext() in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Controllers\InterventionsController.cs:246&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Threading.Tasks.&amp;lt;CastToObject&amp;gt;d__3`1.MoveNext() +252&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;InvokeActionAsyncCore&amp;gt;d__0.MoveNext() +331&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;ExecuteAsync&amp;gt;d__2.MoveNext() +611&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;ExecuteAsync&amp;gt;d__0.MoveNext() +275&#xD;&#xA;&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_CONTENT_LENGTH:341&#xD;&#xA;HTTP_CONTENT_TYPE:application/json;charset=UTF-8&#xD;&#xA;HTTP_ACCEPT:application/json, text/plain, */*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-GB,en-US;q=0.8,en;q=0.6&#xD;&#xA;HTTP_AUTHORIZATION:Bearer jII2YM673YzwZtp-Ypdet85cNJSfc4CN9N3K0KvpFOLuK2701c8KDDdKExMdSJvd4K7Pg4tTwy3fbv-UCfMJeV_jlMA_BCS4jzZ0ggTvVZJDsFF3dWrJi_ZLn_dt4e6o6y_gpZMWzcqRQF_S2FCxytCKYFtvvZjL0xMzBSl86KeUp9hhC9oAmLDoKFyBgvNjZDCKW-sMNZ_4Fdav9w_K3bFQlF9Dtn7m_n4iH2k5Rh4IRf05ZA0dFe2vCsnY88lCdwUocai8WOVqrNwKdil5wgzRfmrMYXsoIVKFdy9fs2DQUoCoAQ8UW__x-k6pXqgn2OYjNvE9HefssSWzetmRCodxjIPnrTTZNaTlKwa0LKFx8CebZvufzMD_OOHePJIp88MXp1B07BUu7KCHJkDxA1_jc3MVpD9xXYBGSkewJp04pabhNnUuzGaaILxB-SngZRUjIJufgfb6mOILcAHKZPbVGp4wNILrd9LJpVDwomtf726Go3GQDFNeeswu-zC-pB4FWmFtQr7iNol7Uc487u_vB1JerFJSPfqP4rK5MYFaj111WLHBqRyOlqLrk_m5i-Vs3pvws2vabRfKBlYuh9zUI55JtsnFcrVW9dMYPEWTmHtUsVG1S9_uN-DKgTuJETLFzvgOy712g1k9EuClUPaTNyr0--vwLLOCFnepM75kbqzpT2QPXVpwU8c8xP6n0c9CtUSNKTBKDaX6jb7JCTITSwW-xGudoWsOktzAjgVjH8HtQi5Sqv4nfQgpwQJxr-9DBjlZmTVw7G7bQ0k9Nei35M5B-qNtAsvEvP6hAJ2r2j3AX6TkAGyLXsxYq4MeBwHXmAZIy7myijg4jlMz8T6-70YlTEDzXhhnnsa1DLR20zlaDR5TNjdiCIlNCXFvAWcQKFEdMuXQqnU2BhLNjb3IW0Z-2wbGlBHbbuTgoIyVRjvvwFRHHxBtudPA68byZ-SdkhjQXUO5LuJA9VgVnB4BfYpXVC5CykkoS-KRzLH6wjteVtqLN_29XL8l0foOfuNbAcZn1-vzKnoCNpilVQSrNRFicrpuPMk91kOgFKKSOR8dKkkZFWTsN35mRXJjiMDwtlLNihUX-NZpJ6pQEYJZ4bwjbwmq_QYq5s3oUU0&#xD;&#xA;HTTP_HOST:sf-d001:1234&#xD;&#xA;HTTP_REFERER:http://localhost:53812/&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;HTTP_ORIGIN:http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Content-Length: 341&#xD;&#xA;Content-Type: application/json;charset=UTF-8&#xD;&#xA;Accept: application/json, text/plain, */*&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: en-GB,en-US;q=0.8,en;q=0.6&#xD;&#xA;Authorization: Bearer jII2YM673YzwZtp-Ypdet85cNJSfc4CN9N3K0KvpFOLuK2701c8KDDdKExMdSJvd4K7Pg4tTwy3fbv-UCfMJeV_jlMA_BCS4jzZ0ggTvVZJDsFF3dWrJi_ZLn_dt4e6o6y_gpZMWzcqRQF_S2FCxytCKYFtvvZjL0xMzBSl86KeUp9hhC9oAmLDoKFyBgvNjZDCKW-sMNZ_4Fdav9w_K3bFQlF9Dtn7m_n4iH2k5Rh4IRf05ZA0dFe2vCsnY88lCdwUocai8WOVqrNwKdil5wgzRfmrMYXsoIVKFdy9fs2DQUoCoAQ8UW__x-k6pXqgn2OYjNvE9HefssSWzetmRCodxjIPnrTTZNaTlKwa0LKFx8CebZvufzMD_OOHePJIp88MXp1B07BUu7KCHJkDxA1_jc3MVpD9xXYBGSkewJp04pabhNnUuzGaaILxB-SngZRUjIJufgfb6mOILcAHKZPbVGp4wNILrd9LJpVDwomtf726Go3GQDFNeeswu-zC-pB4FWmFtQr7iNol7Uc487u_vB1JerFJSPfqP4rK5MYFaj111WLHBqRyOlqLrk_m5i-Vs3pvws2vabRfKBlYuh9zUI55JtsnFcrVW9dMYPEWTmHtUsVG1S9_uN-DKgTuJETLFzvgOy712g1k9EuClUPaTNyr0--vwLLOCFnepM75kbqzpT2QPXVpwU8c8xP6n0c9CtUSNKTBKDaX6jb7JCTITSwW-xGudoWsOktzAjgVjH8HtQi5Sqv4nfQgpwQJxr-9DBjlZmTVw7G7bQ0k9Nei35M5B-qNtAsvEvP6hAJ2r2j3AX6TkAGyLXsxYq4MeBwHXmAZIy7myijg4jlMz8T6-70YlTEDzXhhnnsa1DLR20zlaDR5TNjdiCIlNCXFvAWcQKFEdMuXQqnU2BhLNjb3IW0Z-2wbGlBHbbuTgoIyVRjvvwFRHHxBtudPA68byZ-SdkhjQXUO5LuJA9VgVnB4BfYpXVC5CykkoS-KRzLH6wjteVtqLN_29XL8l0foOfuNbAcZn1-vzKnoCNpilVQSrNRFicrpuPMk91kOgFKKSOR8dKkkZFWTsN35mRXJjiMDwtlLNihUX-NZpJ6pQEYJZ4bwjbwmq_QYq5s3oUU0&#xD;&#xA;Host: sf-d001:1234&#xD;&#xA;Referer: http://localhost:53812/&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;Origin: http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/4/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Bearer" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="341" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="application/json;charset=UTF-8" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="4" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/4" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="192.168.1.4" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/api/Interventions/GenerateInterventions" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\api\Interventions\GenerateInterventions" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="192.168.1.4" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="192.168.1.4" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="63331" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/api/Interventions/GenerateInterventions" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="sf-d001" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1234" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/api/Interventions/GenerateInterventions" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="341" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="application/json;charset=UTF-8" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="application/json, text/plain, */*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-GB,en-US;q=0.8,en;q=0.6" />
+    </item>
+    <item name="HTTP_AUTHORIZATION">
+      <value string="Bearer jII2YM673YzwZtp-Ypdet85cNJSfc4CN9N3K0KvpFOLuK2701c8KDDdKExMdSJvd4K7Pg4tTwy3fbv-UCfMJeV_jlMA_BCS4jzZ0ggTvVZJDsFF3dWrJi_ZLn_dt4e6o6y_gpZMWzcqRQF_S2FCxytCKYFtvvZjL0xMzBSl86KeUp9hhC9oAmLDoKFyBgvNjZDCKW-sMNZ_4Fdav9w_K3bFQlF9Dtn7m_n4iH2k5Rh4IRf05ZA0dFe2vCsnY88lCdwUocai8WOVqrNwKdil5wgzRfmrMYXsoIVKFdy9fs2DQUoCoAQ8UW__x-k6pXqgn2OYjNvE9HefssSWzetmRCodxjIPnrTTZNaTlKwa0LKFx8CebZvufzMD_OOHePJIp88MXp1B07BUu7KCHJkDxA1_jc3MVpD9xXYBGSkewJp04pabhNnUuzGaaILxB-SngZRUjIJufgfb6mOILcAHKZPbVGp4wNILrd9LJpVDwomtf726Go3GQDFNeeswu-zC-pB4FWmFtQr7iNol7Uc487u_vB1JerFJSPfqP4rK5MYFaj111WLHBqRyOlqLrk_m5i-Vs3pvws2vabRfKBlYuh9zUI55JtsnFcrVW9dMYPEWTmHtUsVG1S9_uN-DKgTuJETLFzvgOy712g1k9EuClUPaTNyr0--vwLLOCFnepM75kbqzpT2QPXVpwU8c8xP6n0c9CtUSNKTBKDaX6jb7JCTITSwW-xGudoWsOktzAjgVjH8HtQi5Sqv4nfQgpwQJxr-9DBjlZmTVw7G7bQ0k9Nei35M5B-qNtAsvEvP6hAJ2r2j3AX6TkAGyLXsxYq4MeBwHXmAZIy7myijg4jlMz8T6-70YlTEDzXhhnnsa1DLR20zlaDR5TNjdiCIlNCXFvAWcQKFEdMuXQqnU2BhLNjb3IW0Z-2wbGlBHbbuTgoIyVRjvvwFRHHxBtudPA68byZ-SdkhjQXUO5LuJA9VgVnB4BfYpXVC5CykkoS-KRzLH6wjteVtqLN_29XL8l0foOfuNbAcZn1-vzKnoCNpilVQSrNRFicrpuPMk91kOgFKKSOR8dKkkZFWTsN35mRXJjiMDwtlLNihUX-NZpJ6pQEYJZ4bwjbwmq_QYq5s3oUU0" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="sf-d001:1234" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:53812/" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_ORIGIN">
+      <value string="http://localhost:53812" />
+    </item>
+  </serverVariables>
+</error>

@@ -1,0 +1,104 @@
+ [HttpPost]
+        [Route("GetAssessmentSummaryOnScores")]
+        public async Task<IHttpActionResult> GetAssessmentSummaryOnScores(Guid residentId)
+        {
+            //List<Residents_Questions_Answers> lstAssessmentSummary = new List<Residents_Questions_Answers>();
+            //lstAssessmentSummary = await db.Residents_Questions_Answers.Include(obj => obj.Sections_Questions_Answers.Sections_Questions_Answers_Tasks).Include(obj => obj.Sections_Questions_Answers.Sections_Questions.Section).Include(obj => obj.Actions.Select(s => s.Actions_Days)).Where(obj => obj.IsActive && obj.Sections_Questions_Answers.IsActive && obj.Sections_Questions_Answers.Section.IsActive && obj.ResidentID.Equals(residentId) && obj.Sections_Questions_Answers.Sections_Questions_Answers_Tasks.Count > 0).ToListAsync<Residents_Questions_Answers>();
+
+
+            //foreach (Residents_Questions_Answers objResidents_Question_Answers in lstAssessmentSummary)
+            //{
+            //    objResidents_Question_Answers.Actions = objResidents_Question_Answers.Actions.Where(obj => obj.IsActive).ToList<CHM.Services.Models.Action>();
+
+            //    foreach (CHM.Services.Models.Action objAction in objResidents_Question_Answers.Actions)
+            //    {
+            //        objAction.Actions_Days = objAction.Actions_Days.Where(obj => obj.IsActive).ToList<Actions_Days>();
+
+            //        foreach (Actions_Days objActions_Days in objAction.Actions_Days)
+            //        {
+            //            objActions_Days.Interventions = objActions_Days.Interventions.Where(obj => obj.IsActive).ToList<Intervention>();
+            //        }
+            //    }
+            //}
+
+
+
+
+
+
+            //return Ok(lstAssessmentSummary);
+
+
+            List<Section_Intervention> GetlstResidentSectionQuestionAnsTask = new List<Section_Intervention>();
+            List<Residents_Questions_Answers> lstResidentAnsweredQuestions=new List<Residents_Questions_Answers>();
+            lstResidentAnsweredQuestions = await db.Residents_Questions_Answers.Include(obj => obj.Sections_Questions_Answers).Where(obj => obj.IsActive && obj.Sections_Questions_Answers.IsActive && obj.ResidentID.Equals(residentId)).ToListAsync<Residents_Questions_Answers>();
+
+            List<Sections_Questions_Answers_Tasks> lstSectionQuestionsAnswersTask = new List<Sections_Questions_Answers_Tasks>();
+            lstSectionQuestionsAnswersTask = await db.Sections_Questions_Answers_Tasks.Include(obj => obj.Section_Intervention).Where(obj => obj.IsActive && obj.Section_Intervention.IsActive).ToListAsync<Sections_Questions_Answers_Tasks>();
+
+            List<Sections_Questions_Answers_Tasks> lstSectionQuestionAnswerHasParentAnswerID = new List<Sections_Questions_Answers_Tasks>();
+            List<Sections_Questions_Answers_Tasks> lstSectionQuestionAnswerHasNoParentAnswerID = new List<Sections_Questions_Answers_Tasks>();
+            foreach (Sections_Questions_Answers_Tasks objSecQuesAnsTask in lstSectionQuestionsAnswersTask)
+            {
+                if (objSecQuesAnsTask.Section_Question_AnswerID != null)
+                    lstSectionQuestionAnswerHasParentAnswerID.Add(objSecQuesAnsTask);
+                else
+                    lstSectionQuestionAnswerHasNoParentAnswerID.Add(objSecQuesAnsTask);
+            }
+
+           
+            foreach(Residents_Questions_Answers objResidentQuestionAnswer in lstResidentAnsweredQuestions)
+            {
+                foreach(Sections_Questions_Answers_Tasks objSectionQuestionAnsTask in lstSectionQuestionAnswerHasParentAnswerID)
+                {
+                    if(objResidentQuestionAnswer.Section_Question_AnswerID==objSectionQuestionAnsTask.Section_Question_AnswerID)
+                    {
+                        GetlstResidentSectionQuestionAnsTask.Add(objSectionQuestionAnsTask.Section_Intervention);
+                    }
+                }
+            }
+
+             //var UniqueInterventionID = lstSectionQuestionAnswerHasNoParentAnswerID.Select(x => new { x.Section_InterventionID}).Distinct();
+
+             // IEnumerable<Guid> UniqueInterventionID = lstSectionQuestionAnswerHasNoParentAnswerID.Select(x => x.Section_InterventionID).Distinct();
+
+
+             var SectionQuestionAnserTaskGroupByIntervention = from SectionQuestionAnserTask in lstSectionQuestionAnswerHasNoParentAnswerID
+                                                               group SectionQuestionAnserTask by SectionQuestionAnserTask.Section_InterventionID;
+
+            foreach(var group  in SectionQuestionAnserTaskGroupByIntervention)
+            {
+                int score = 0;
+                Section_Intervention objIntervention = new Section_Intervention();
+                foreach(var SectionQuestionAnserTask in group)
+                {
+
+                    
+                    foreach(Residents_Questions_Answers objResidentQueAns in lstResidentAnsweredQuestions)
+                    {
+                        if(objResidentQueAns.Sections_Questions_Answers.Section_QuestionID==SectionQuestionAnserTask.Section_QuestionID)
+                        {
+                            score +=Convert.ToInt32(objResidentQueAns.Sections_Questions_Answers.Score);
+                        }
+                    }
+                    objIntervention = SectionQuestionAnserTask.Section_Intervention;
+                }
+
+                if(score>0)
+                {
+                    if(objIntervention.MinScore<=score&&objIntervention.MaxScore>=score)
+                        GetlstResidentSectionQuestionAnsTask.Add(objIntervention);
+                }
+
+               
+            }
+
+
+           
+
+
+            return Ok(GetlstResidentSectionQuestionAnsTask);
+
+
+        }
+

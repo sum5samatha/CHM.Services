@@ -1,0 +1,166 @@
+﻿<error errorId="8455a3e0-f3e7-4849-8073-5881bf84720e" application="/LM/W3SVC/4/ROOT" host="SF-D001" type="System.InvalidOperationException" message="Nullable object must have a value." source="mscorlib" detail="System.Web.HttpUnhandledException (0x80004005): Nullable object must have a value. ---&gt; System.InvalidOperationException: Nullable object must have a value.&#xD;&#xA;   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)&#xD;&#xA;   at System.Nullable`1.get_Value()&#xD;&#xA;   at CHM.Services.Controllers.InterventionsController.&lt;GenerateInterventions&gt;d__1.MoveNext() in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Controllers\InterventionsController.cs:line 255&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Threading.Tasks.TaskHelpersExtensions.&lt;CastToObject&gt;d__3`1.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ApiControllerActionInvoker.&lt;InvokeActionAsyncCore&gt;d__0.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ActionFilterResult.&lt;ExecuteAsync&gt;d__2.MoveNext()&#xD;&#xA;--- End of stack trace from previous location where exception was thrown ---&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)&#xD;&#xA;   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)&#xD;&#xA;   at System.Web.Http.Controllers.ExceptionFilterResult.&lt;ExecuteAsync&gt;d__0.MoveNext()" user="samathareddy216@gmail.com" time="2017-01-31T05:32:39.7511408Z" statusCode="500" webHostHtmlMessage="&lt;!DOCTYPE html&gt;&#xD;&#xA;&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Nullable object must have a value.&lt;/title&gt;&#xD;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:&quot;Consolas&quot;,&quot;Lucida Console&quot;,Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;         @media screen and (max-width: 639px) {&#xD;&#xA;          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }&#xD;&#xA;         }&#xD;&#xA;         @media screen and (max-width: 479px) {&#xD;&#xA;          pre { width: 280px; }&#xD;&#xA;         }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor=&quot;white&quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;Server Error in '/' Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;Nullable object must have a value.&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Description: &lt;/b&gt;Nullable object must have a value.&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Exception Details: &lt;/b&gt;System.InvalidOperationException: Nullable object must have a value.&lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;Line 253:                        {&#xD;&#xA;Line 254:                            DateTime dt = DateTime.MinValue;&#xD;&#xA;&lt;font color=red&gt;Line 255:                            int currentYearDate = Utils.DateTimeExtensions.GetDateForWeekDay((DayOfWeek)objAction_Day.Day, objAction.Instance.Value, objAction.Month.Value + 1, objAction.StartDate.Year);&#xD;&#xA;&lt;/font&gt;Line 256:&#xD;&#xA;Line 257:                            //if (objAction_Day.Date.Value &amp;lt; objAction.StartDate.Day)&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Source File: &lt;/b&gt; E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Controllers\InterventionsController.cs&lt;b&gt; &amp;nbsp;&amp;nbsp; Line: &lt;/b&gt; 255&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Stack Trace:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;[InvalidOperationException: Nullable object must have a value.]&#xD;&#xA;   System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource) +56&#xD;&#xA;   System.Nullable`1.get_Value() +25&#xD;&#xA;   CHM.Services.Controllers.&amp;lt;GenerateInterventions&amp;gt;d__1.MoveNext() in E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\Controllers\InterventionsController.cs:255&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Threading.Tasks.&amp;lt;CastToObject&amp;gt;d__3`1.MoveNext() +252&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;InvokeActionAsyncCore&amp;gt;d__0.MoveNext() +331&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;ExecuteAsync&amp;gt;d__2.MoveNext() +611&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task) +14139120&#xD;&#xA;   System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) +62&#xD;&#xA;   System.Web.Http.Controllers.&amp;lt;ExecuteAsync&amp;gt;d__0.MoveNext() +275&#xD;&#xA;&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_CONTENT_LENGTH:364&#xD;&#xA;HTTP_CONTENT_TYPE:application/json;charset=UTF-8&#xD;&#xA;HTTP_ACCEPT:application/json, text/plain, */*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-GB,en-US;q=0.8,en;q=0.6&#xD;&#xA;HTTP_AUTHORIZATION:Bearer ZK62KfBL6Olgg_I8Cc6ZZqmsYwuLUL5gWy6MCpkFTSU-6FjeeWMLI_hJslMe4R4SPd2dZ0x5Q4Vz5rx9C4kRVDE_2V39QwwEueCdbIt3ER44p5WQAqKGNwOD0Jmgb3AFF8PnGQtVrzCvjIWMi7QSWfl5pBoPn1Yh4w4XoB6vaDPvl_sztuq6_3UFcDO8er2gxJLFd4QaKPeKKFvWwD9IXr_m2qFPOVylNh5COk-kfr_WbWSb39G8iegIPPTtY-LBthCLY6HgaahN7zv49N7W2PsGa7nXE8GAJJbnnVusAcsIDb8bDer08pJz39BrYHzkum0D31hTWoarNpL3a71Io8xWC-vcHpSBkTF2sfJ4RaWeDVX1D5NPuzIxAicoXAK1BBiEqIHc1n176HGrcYwFdcR5EcbB7FqnUkyyaF0zzmgJPDdebzyGFpx54A9Uco-CuPQj2lktHegOJcxexk7h_3muTXcaqCwaWLV3CJcx5vPdF-xBOpW_COtyp0elaKMZ4cyviKQtN9CmRrQN1H_T0yvIAT8yQ1hcMD9Pkc91pd97FsVCpfhWFOXjlV3loTNuQslGodkQefTjWpy9PWyfk8CcNzRlVWP7k3oOADOsYMkCbGII0vmTGKQ-ZlSpZqUen52mYYQdED6dakmaKjDGq7YDkY3QVwoFlPKqOB54-mtyu7rUkQ3z9VHwyDV8AqtBNtgajnrj9JKI6-IuB_qp3cH_gCFJ4NJCu60vN_HDuh7N9YBmuTgMrQ-QXdUudR0IjSQFp5dPpYTMH1u4dHwi1iH2rNL4pyTBcrknNlf1heNW6vqV8qx4qsmrBROhZh1qXusK1agHypWaiN5agsLytFE7LokKb4jITOrFU3MgSHPpAqOFL11_x-FxUHW8ykiga9MzLHXLw3Rl6uBXRM4Qxq8r4jY_7B2_4ci2JnZVYKNkj6jFxqSDVDPnpwtraMRktWKUVNZ3aqc0D1eyPOhAT4bVhAlF_TORFDmRTDPoFcTVvL5YQN2hkZrR3FP2xXbWOz3prtW2v4czosiUNSz8uoPCbPk0dthNsmq8qOudA9wUDVQoOQCwxgPvGGfPZUBVONlnz28oaGE-0xtmZ70iZU_FHRgqFHXJ7HcOVINUrP2kxOlu95d-6ySdYwzM--Jc6I9cuebCLo7EgeWWllM7RMoR0ZPlbDiiWUzgTbVoaQ8&#xD;&#xA;HTTP_HOST:sf-d001:1234&#xD;&#xA;HTTP_REFERER:http://localhost:53812/&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;HTTP_ORIGIN:http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Content-Length: 364&#xD;&#xA;Content-Type: application/json;charset=UTF-8&#xD;&#xA;Accept: application/json, text/plain, */*&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: en-GB,en-US;q=0.8,en;q=0.6&#xD;&#xA;Authorization: Bearer ZK62KfBL6Olgg_I8Cc6ZZqmsYwuLUL5gWy6MCpkFTSU-6FjeeWMLI_hJslMe4R4SPd2dZ0x5Q4Vz5rx9C4kRVDE_2V39QwwEueCdbIt3ER44p5WQAqKGNwOD0Jmgb3AFF8PnGQtVrzCvjIWMi7QSWfl5pBoPn1Yh4w4XoB6vaDPvl_sztuq6_3UFcDO8er2gxJLFd4QaKPeKKFvWwD9IXr_m2qFPOVylNh5COk-kfr_WbWSb39G8iegIPPTtY-LBthCLY6HgaahN7zv49N7W2PsGa7nXE8GAJJbnnVusAcsIDb8bDer08pJz39BrYHzkum0D31hTWoarNpL3a71Io8xWC-vcHpSBkTF2sfJ4RaWeDVX1D5NPuzIxAicoXAK1BBiEqIHc1n176HGrcYwFdcR5EcbB7FqnUkyyaF0zzmgJPDdebzyGFpx54A9Uco-CuPQj2lktHegOJcxexk7h_3muTXcaqCwaWLV3CJcx5vPdF-xBOpW_COtyp0elaKMZ4cyviKQtN9CmRrQN1H_T0yvIAT8yQ1hcMD9Pkc91pd97FsVCpfhWFOXjlV3loTNuQslGodkQefTjWpy9PWyfk8CcNzRlVWP7k3oOADOsYMkCbGII0vmTGKQ-ZlSpZqUen52mYYQdED6dakmaKjDGq7YDkY3QVwoFlPKqOB54-mtyu7rUkQ3z9VHwyDV8AqtBNtgajnrj9JKI6-IuB_qp3cH_gCFJ4NJCu60vN_HDuh7N9YBmuTgMrQ-QXdUudR0IjSQFp5dPpYTMH1u4dHwi1iH2rNL4pyTBcrknNlf1heNW6vqV8qx4qsmrBROhZh1qXusK1agHypWaiN5agsLytFE7LokKb4jITOrFU3MgSHPpAqOFL11_x-FxUHW8ykiga9MzLHXLw3Rl6uBXRM4Qxq8r4jY_7B2_4ci2JnZVYKNkj6jFxqSDVDPnpwtraMRktWKUVNZ3aqc0D1eyPOhAT4bVhAlF_TORFDmRTDPoFcTVvL5YQN2hkZrR3FP2xXbWOz3prtW2v4czosiUNSz8uoPCbPk0dthNsmq8qOudA9wUDVQoOQCwxgPvGGfPZUBVONlnz28oaGE-0xtmZ70iZU_FHRgqFHXJ7HcOVINUrP2kxOlu95d-6ySdYwzM--Jc6I9cuebCLo7EgeWWllM7RMoR0ZPlbDiiWUzgTbVoaQ8&#xD;&#xA;Host: sf-d001:1234&#xD;&#xA;Referer: http://localhost:53812/&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36&#xD;&#xA;Origin: http://localhost:53812&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/4/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Bearer" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="samathareddy216@gmail.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="364" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="application/json;charset=UTF-8" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="4" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/4" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="192.168.1.2" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/api/Interventions/GenerateInterventions" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="E:\Enthusis_Latest\Enthusis.Services\CHM.Services\CHM.Services\api\Interventions\GenerateInterventions" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="192.168.1.2" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="192.168.1.2" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="57047" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/api/Interventions/GenerateInterventions" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="sf-d001" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="1234" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/api/Interventions/GenerateInterventions" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="364" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="application/json;charset=UTF-8" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="application/json, text/plain, */*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-GB,en-US;q=0.8,en;q=0.6" />
+    </item>
+    <item name="HTTP_AUTHORIZATION">
+      <value string="Bearer ZK62KfBL6Olgg_I8Cc6ZZqmsYwuLUL5gWy6MCpkFTSU-6FjeeWMLI_hJslMe4R4SPd2dZ0x5Q4Vz5rx9C4kRVDE_2V39QwwEueCdbIt3ER44p5WQAqKGNwOD0Jmgb3AFF8PnGQtVrzCvjIWMi7QSWfl5pBoPn1Yh4w4XoB6vaDPvl_sztuq6_3UFcDO8er2gxJLFd4QaKPeKKFvWwD9IXr_m2qFPOVylNh5COk-kfr_WbWSb39G8iegIPPTtY-LBthCLY6HgaahN7zv49N7W2PsGa7nXE8GAJJbnnVusAcsIDb8bDer08pJz39BrYHzkum0D31hTWoarNpL3a71Io8xWC-vcHpSBkTF2sfJ4RaWeDVX1D5NPuzIxAicoXAK1BBiEqIHc1n176HGrcYwFdcR5EcbB7FqnUkyyaF0zzmgJPDdebzyGFpx54A9Uco-CuPQj2lktHegOJcxexk7h_3muTXcaqCwaWLV3CJcx5vPdF-xBOpW_COtyp0elaKMZ4cyviKQtN9CmRrQN1H_T0yvIAT8yQ1hcMD9Pkc91pd97FsVCpfhWFOXjlV3loTNuQslGodkQefTjWpy9PWyfk8CcNzRlVWP7k3oOADOsYMkCbGII0vmTGKQ-ZlSpZqUen52mYYQdED6dakmaKjDGq7YDkY3QVwoFlPKqOB54-mtyu7rUkQ3z9VHwyDV8AqtBNtgajnrj9JKI6-IuB_qp3cH_gCFJ4NJCu60vN_HDuh7N9YBmuTgMrQ-QXdUudR0IjSQFp5dPpYTMH1u4dHwi1iH2rNL4pyTBcrknNlf1heNW6vqV8qx4qsmrBROhZh1qXusK1agHypWaiN5agsLytFE7LokKb4jITOrFU3MgSHPpAqOFL11_x-FxUHW8ykiga9MzLHXLw3Rl6uBXRM4Qxq8r4jY_7B2_4ci2JnZVYKNkj6jFxqSDVDPnpwtraMRktWKUVNZ3aqc0D1eyPOhAT4bVhAlF_TORFDmRTDPoFcTVvL5YQN2hkZrR3FP2xXbWOz3prtW2v4czosiUNSz8uoPCbPk0dthNsmq8qOudA9wUDVQoOQCwxgPvGGfPZUBVONlnz28oaGE-0xtmZ70iZU_FHRgqFHXJ7HcOVINUrP2kxOlu95d-6ySdYwzM--Jc6I9cuebCLo7EgeWWllM7RMoR0ZPlbDiiWUzgTbVoaQ8" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="sf-d001:1234" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:53812/" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" />
+    </item>
+    <item name="HTTP_ORIGIN">
+      <value string="http://localhost:53812" />
+    </item>
+  </serverVariables>
+</error>
